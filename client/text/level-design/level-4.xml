@@ -1,0 +1,75 @@
+<map name="Graduation" difficulty="1" sizeX="40" sizeY="40" startX="12" startY="27" >
+<terrain>
+84dc19f602cc8396e8735db89eb5a222.eNodkoGyoyAMRUlCC
+IJoa9Gqrdr33mx3P7OzX77XdYY7hxC4MWCqO5t+tWxfxqvpyhb
+MVgrtSym8Ik3BCsVXbIKk7LzTV9+oDFmc6msE3rOqhtcKfOaEj
+60h4e6UCqEYA1FumfjA9B0Lc9M5Igrv2IMvjtiBr8xxcCwMviF
++c+Il/FqKyd4751R+5mrymJBtv/uidu26WmvUWki0K2Q6FpF3h
+kPbETGD4dBeHMzBcMinA9k7w6Gtjp2TdzPBbUIOxXcGt3cnxJE
+TfpziiHiGcIEB9VWZ68DMM0xlu4gI20RMcVbkTKyy3lXku59E+
+9mhZd8D8DY5uP2ZZvHzQgW+uVSGx4O5UP8Q9tNgTNNdKA8PD3q
+iimUm75vFa7we3rsYRtyJjV8d0iuLbjdUNmzM/roR+3pK2bz4c
+TPx6xrEHzcy/9yYwnMnDvtJ285k2+HZDlBoDk/BFlBcSX3aBbG
+d6HwJZvHlyeJBlOoFPaXpopyOFhdISxsoz8BcITS2QumIaGSu8
+ZzHRLng6qlvlXJ3xvqolAwkybCn5HTujEgKweCmkLQ8cXpa7lj
+gcSbJI1qcKxqWH6ghpxHroaJo7RgCSjb+P3PGmT4i/bO29NkxS
+kefy0CfEWO40d/mwa5PCa4fNO0fd7UhUg
+</terrain>
+<briefing>
+*Begin Transmission*\n\n
+The training ground has been overrun. You must clear the island of zombies and blow the bridge to prevent others from coming.\n\n
+*End Transmission*
+</briefing>
+<script>
+  <state name="start">
+    <text>There are zombies in many of the buildings. Yellow, orange, and red triangles show increasing threat levels.</text>
+    <next/>
+    <action type="add-state" arg="none" />
+    <edge type="click-next" next="1" />
+  </state>
+  <state name="1">
+    <text>If the zombies hear a noise, they will come out and attack. Be especially careful when dealing with buildings marked in red.</text>
+    <next/>
+    <edge type="click-next" next="2" />
+  </state>
+  <state name="2" button="timer">
+    <text>The timer counts down till the next zombie wave. You can also click it to pause the game. You can still issue orders while the game is paused.</text>
+    <next/>
+    <action type="add-state" arg="countdown" />
+    <edge type="click-next" next="3" />
+  </state>
+  <state name="3">
+    <text>Clear the island of zombies and blow up the bridge. Good luck!</text>
+    <next/>
+    <edge type="click-next" />
+  </state>
+  <state name="none">
+    <edge type="bridge-clear" next="bridge"/>
+    <edge type="zombie-clear" next="zombie" />
+  </state>
+  <state name="bridge">
+    <edge type="zombie-clear" next="bridge-zombie" />
+  </state>
+  <state name="zombie">
+    <edge type="bridge-clear" next="bridge-zombie" />
+    <edge type="zombie-horde-begin" next="none" />
+  </state>
+  <state name="bridge-zombie">
+    <action type="win">
+      <arg>
+*Begin Transmission*\n\n
+The training island is now secured. Now it is time for you to move into the field.\n\n
+*End Transmission*
+</arg>
+    </action>
+  </state>
+  <state name="countdown">
+    <action type="countdown" arg="150" />
+    <edge type="countdown-complete" next="horde" />
+  </state>
+  <state name="horde">
+    <action type="horde" />
+    <edge type="zombie-horde-end" next="countdown" />
+  </state>
+</script>
+</map>

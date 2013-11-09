@@ -1,0 +1,64 @@
+<map name="Bridge" difficulty="1" sizeX="60" sizeY="60" startX="26" startY="49" >
+<briefing>
+*Begin Transmission*\n\n
+Zombies have infiltrated the heart of the city. Your goal is to create a checkpoint on the south bridge.\n\n
+
+Enter the area, clear out undead you find there, and make sure nobody enters or leaves the city. We need to quarantine the whole island.\n\n
+*End Transmission*
+</briefing>
+<terrain>
+40b96b8ff8119e279e1fb5ff8c004a08.eNpFkguXojoMgJukD
+ygIXBEVGUB8jasr4mPm94HbH75hz7kOpwlfEpomKfreKaPXl5T
+MYydD7bUThJk/JT0LJWLOSi5DQB1FFk2UWKPNxJA2ijyjEt8Yp
+TCAyNcko1CjtKGETaQUxYb3cwYl5TZVRDO2AZs548JIAMRAkTy
+WbFdjSHjrtZLUGAIQsgxT1GWUgu4UWnNXyq7PnpJnO4bxwFlpp
+5D05qQ0nTR7yTS7qa+zC5FR+4mvvQ65zpYMRN2cMG+5l7Ilbqg
+F3KRPrunJ+3A7Z1w8BTDnDylV+ZjApnxKqp6CW9g3HN98j+jBr
+tOEpwfJpu0ktTckEk37YORvQajLA6RsvyUcdrzr8CX48ZpP5uO
+Tu1ZGLWxk1vEi03UFni736OuyQjDzBRo9P7Ba7MdKKunJtNZal
+jVqnVYa9HSvwEwP0pjphdhcSKPjnQQdV6B1/EFo4gUpzCOZ6GU
+EiS5jilXp+aBOHkgVeQFIy0kwP3D6+gIgl3vwZVKR1usdU30AY
+wOfaBIcfEn21BF56nIDlJcOwAZsEwY8AWk7MMeEW5t+aR6Opuj
+J41DRgw/xvhG0+QI06guxXxnsC4NDYfj6+iPT8R8lvhwSnyffZ
+z4Nmc8j7Gsfh5p92MeW+qmlYWpH/8JyHiv7wuq+Yt5w9JOjnxz
+FPgxwYGHKAs7EBP1HQH3D/uaftQvQ2RBcEgpXsqyZG37vQ3RHf
+v9maVmiiXApy3Ii+tVEupp5y3JgOU/AXSborhwrEnRFyjXNaFj
+NxnqLOQ3FfKTVEofVkumVF/wHyHG9Vj9Y/ODHG4e85D7dtBJ9W
+uOQ1jx+l9ViKGpC8SprEMCNILiqFu6/NQ6LtSbhZg24okGXbIS
+bb9DNttzgVgzZTiOXucM+/+Ryjpyk//iFLj+BW57F8HFG5DZbM
+ZTteHDdsnVl/5Wv5lVef467cvAKQ9yNdWQdFwzjejVvdL874ex
+NuPCGLrvha357f7W6obA251t+NW+vm9451f0n1Rvd/s4X9RAuY
+2ke8Mqf/1fyKt74p7yubn+yjlUzqvmN1erW3Fllo2pGs3iyyp9
+/AZagfKk
+</terrain>
+<script>
+  <state name="start">
+    <action type="add-state" arg="countdown" />
+    <edge type="bridge-clear" next="bridge"/>
+    <edge type="zombie-clear" next="zombie" />
+  </state>
+  <state name="bridge">
+    <edge type="zombie-clear" next="bridge-zombie" />
+  </state>
+  <state name="zombie">
+    <edge type="bridge-clear" next="bridge-zombie" />
+    <edge type="zombie-horde-begin" next="start" />
+  </state>
+  <state name="bridge-zombie">
+    <action type="win">
+      <arg>
+*Begin Transmission*\n\n
+Excellent work, soldier. Other squads are reporting that their bridges are secure as well. We might just contain this.\n\n
+*End Transmission*</arg>
+    </action>
+  </state>
+  <state name="countdown">
+    <action type="countdown" arg="150" />
+    <edge type="countdown-complete" next="horde" />
+  </state>
+  <state name="horde">
+    <action type="horde" />
+    <edge type="zombie-horde-end" next="countdown" />
+  </state>
+</script>
+</map>

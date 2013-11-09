@@ -1,0 +1,12 @@
+-D NOFOOD
+-D AS3
+#-D MUSIC
+#-D TEST_LOAD
+-lib twister
+-cp src
+-as3 tmp/as3
+-swf-version 9
+Main
+-swf-header 640:480:20:303030
+--flash-strict
+#--no-traces

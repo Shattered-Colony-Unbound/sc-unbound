@@ -1,0 +1,286 @@
+#--------------
+# 0
+#--------------
+
+<p>
+  <span class="title">Tutorial</span>\n
+  There's not much time, so let's get you trained ASAP. <a 
+  href="event:zombies">Zombies</a> are everywhere. We need to <a 
+  href="event:goal">clear</a> the island and <a 
+  href="event:resources">resources</a> are limited.
+</p>
+
+##
+
+<p>
+  <span class="title">Scrolling</span>\n
+  Scout out the area. Scroll the map by moving the mouse outside the
+  play area or using the arrow keys.
+</p>
+
+##
+
+2
+
+##
+
+<p>
+  <span class="title">Establish Perimeter</span>\n
+  You need a <a href="event:sniper">sniper</a> to defend your <a 
+  href="event:depot">depot</a> from the <a 
+  href="event:zombies">zombies</a>. Click 'Build Sniper,' then click
+  the map to place your sniper tower.
+</p>
+
+##
+
+<p>
+  <span class="title">Establish Perimeter</span>\n
+  Good. An idle <a href="event:survivors">survivor</a> has been sent
+  out with some <a href="event:boards">boards</a> to build the tower.
+</p>
+
+##
+
+#--------------
+# 5
+#--------------
+
+<p>
+  <span class="title">Establish Perimeter</span>\n
+  I'd breathe a lot easier with a second <a href="event:sniper">sniper
+  tower</a>. Build another one near the first tower.
+</p>
+
+
+##
+
+<p>
+  <span class="title">Establish Perimeter</span>\n
+  Your <a href="event:sniper">snipers</a> don't have <a
+  href="event:ammo">ammo</a> yet. Wait until both towers are stocked
+  up.
+#  Don't leave your snipers hanging. Increase your ammo quota to build
+#  up a stockpile at your tower, so when the bullets start flying your
+#  shooters won't be left out to dry.
+</p>
+
+##
+
+7
+
+##
+
+<p>
+  <span class="title">Lure out Zombies</span>\n
+  Now that we've got some protection, let's give these crack shots
+  something to shoot at. Order one survivor to shoot into the air to
+  <a href="event:noise">lure</a> out <a 
+  href="event:zombies">zombies</a> from any nearby <a 
+  href="event:buildings">buildings</a>.
+</p>
+
+##
+
+<p>
+  <span class="title">Lure out Zombies</span>\n
+  That's the stuff. Your <a href="event:sniper">snipers</a> should
+  make mincemeat from these <a href="event:zombies">living dead</a>.
+</p>
+
+##
+
+#--------------
+# 10
+#--------------
+
+10
+
+##
+
+<p>
+  <span class="title">Strengthen Perimeter</span>\n
+  If the <a href="event:zombies">zombies</a> reach the base of a tower
+  you can kiss it goodbye. Some <a 
+  href="event:barricade">barricades</a> ought to slow the monsters
+  down.
+</p>
+
+##
+
+<p>
+  <span class="title">Strengthen Perimeter</span>\n
+  Build a second <a href="event:barricade">barricade</a> next to the first.
+#  If the zombies reach the base of a tower you can kiss it
+#  goodbye. Some barricades ought to slow the monsters down.
+</p>
+
+##
+
+<p>
+  <span class="title">Strengthen Perimeter</span>\n
+  Build a third <a href="event:barricade">barricade</a>.
+#  If the zombies reach the base of a tower you can kiss it
+#  goodbye. Some barricades ought to slow the monsters down.
+</p>
+
+##
+
+<p>
+  <span class="title">Strengthen Perimeter</span>\n
+  A fourth <a href="event:barricade">barricade</a> can block off the
+  street completely.
+#  If the zombies reach the base of a tower you can kiss it
+#  goodbye. Some barricades ought to slow the monsters down.
+</p>
+
+##
+
+#--------------
+# 15
+#--------------
+
+15
+
+##
+
+<p>
+  <span class="title">Ride Out Attack</span>\n
+  Damn, we're running out of time. The <a 
+  href="event:timer">counter</a> in the upper left is all the time
+  you've got till the next <a href="event:zombie_hordes">horde</a>
+  swarms over the bridges. Sit tight and hope those <a 
+  href="event:sniper">snipers</a> hold the line.
+</p>
+
+##
+
+17
+
+##
+
+<p>
+  <span class="title">Expand Perimeter</span>\n
+  Close call, but we have to keep moving. Destroy a <a 
+  href="event:barricade">barricade</a> so <a 
+  href="event:survivors">survivors</a> can move through to the other
+  side.
+</p>
+
+##
+
+<p>
+  <span class="title">Expand Perimeter</span>\n
+  Wait while a <a href="survivor">survivor</a> dismantles the <a 
+  href="event:barricade">barricade</a>.
+</p>
+
+##
+
+#--------------
+# 20
+#--------------
+
+<p>
+  <span class="title">Expand Perimeter</span>\n
+  It's an awful long walk from here back to our first <a 
+  href="event:depot">depot</a>. Build another one as a forward supply
+  center.
+</p>
+
+##
+
+21
+
+##
+
+<p>
+  <span class="title">Resupply</span>\n
+  We need to get this <a href="event:depot">depot</a> stocked before
+  those things come back. Build <a href="event:workshop">workshops</a>
+  at the entrances to nearby <a href="event:buildings">buildings</a>
+  to search for <a href="event:ammo">ammo</a>, <a 
+  href="event:boards">boards</a> to build structures, and <a 
+  href="event:survivors">survivors</a> to man stations and transport
+  <a href="event:resources">resources</a>.
+</p>
+
+##
+
+<p>
+  <span class="title">Resupply</span>\n
+  That's a good start. Build another <a href="event:workshop">workshop</a>.
+#  We need to get this depot stocked before those things come
+#  back. Build workshops at the entrances to nearby buildings to search
+#  for ammo, boards to build structures, and survivors to man stations
+#  and transport resources.
+</p>
+
+##
+
+<p>
+  <span class="title">Resupply</span>\n
+  Build a third <a href="event:workshop">workshop</a>.
+#  We need to get this depot stocked before those things come
+#  back. Build workshops at the entrances to nearby buildings to search
+#  for ammo, boards to build structures, and survivors to man stations
+#  and transport resources.
+</p>
+
+##
+
+#--------------
+# 25
+#--------------
+
+<p>
+  <span class="title">Clear Island of Zombies</span>\n
+  Good work. Now keep expanding. Build more <a 
+  href="event:sniper">sniper towers</a> to <a 
+  href="event:noise">lure</a> out <a href="event:zombies">zombies</a>
+  and clear the streets. Build <a href="event:workshop">workshops</a>
+  at buildings to send survivors in to bolster your resources. <a 
+  href="event:goal">Clear the island</a>.
+</p>
+
+##
+
+<p>
+  <span class="title">Destroy Bridge</span>\n
+  You've secured the island, but as long as that bridge is up, all
+  you've built could be overrun by a <a 
+  href="event:zombie_hordes">horde</a> at any moment. Build a <a 
+  href="event:workshop">workshop</a> on the <a 
+  href="event:charges">charge</a> to blow the bridge and make this a
+  permanent sanctuary.
+</p>
+
+##
+
+<p>
+  <span class="title">Destroy Bridge</span>\n
+  Wait for the <a href="event:survivors">survivor</a> to build the <a 
+  href="event:workshop">workshop</a>.
+</p>
+
+##
+
+28
+
+##
+
+<p>
+  <span class="title">Destroy Bridge</span>\n
+  You're about to be a hero, but don't get cocky. Increase the quota
+  at the <a href="event:workshop">workshop</a> to send more people to
+  get those <a href="event:charges">charges</a> set faster; you've got
+  plenty of <a href="event:survivors">survivors</a> to spare now.
+</p>
+
+##
+
+<p>
+  <span class="title">Mission Accomplished</span>\n
+  Congrats, soldier: that's one bridge down. Keep it up and there may
+  just be hope for humanity yet.
+</p>

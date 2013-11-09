@@ -1,0 +1,214 @@
+<map name="Boom" difficulty="1" sizeX="20" sizeY="31" startX="10" startY="14" >
+<terrain>
+1151f1ee463c72420c6686469eb083eb.eNoVzksSwjAMA9DId
+izn21LacgPuCScnbN5CMxqJOVfhJHbmhZMOHxXhTlDKLv6uIVp
+LqnUbzhPwdgksGoq1CbK/VJkXEbdZCusN7v0B8x5QDv45kFuZI
+lqa6jAGsnNAjTvEeUDoz1XxDUafaybOlfFa9BtrcN34tIaUvqV
+LSkkA/AApEQYw
+</terrain>
+<briefing>
+*Begin Transmission*\n\n
+You&apos;ve done well so far, soldier. But out in the field you will often have to scavenge what you can from the local area. You need to learn about workshops and resources.\n\n
+*End Transmission*
+</briefing>
+<script>
+  <state name="start">
+    <text>Most maps are bigger than your flash window. Scroll by dragging the map or using the arrow keys.</text>
+    <next/>
+    <edge type="bridge-clear" next="win"/>
+    <edge type="build-workshop" next="17" offsetX="9" offsetY="21"
+          limitX="10" limitY="22"/>
+    <edge type="build-depot" next="16" offsetX="5" offsetY="14"
+          limitX="15" limitY="26"/>
+    <edge type="build-workshop" next="5" offsetX="10" offsetY = "9"
+          limitX="11" limitY="10"/>
+    <edge type="click-next" next="1"/>
+  </state>
+  <state name="1" button="total-resources">
+    <text>Your unallocated resources are shown at the top. Oh no! Resource levels are extremely low!</text>
+    <next/>
+    <edge type="bridge-clear" next="win"/>
+    <edge type="build-workshop" next="17" offsetX="9" offsetY="21"
+          limitX="10" limitY="22"/>
+    <edge type="build-depot" next="16" offsetX="5" offsetY="14"
+          limitX="15" limitY="26"/>
+    <edge type="build-workshop" next="5" offsetX="10" offsetY = "9"
+          limitX="11" limitY="10"/>
+    <edge type="click-next" next="2"/>
+  </state>
+  <state name="2" posX="10" posY="9">
+    <text>This house has a green arrow which means it is clear of zombies and there are resources inside.</text>
+    <action type="move-map" arg="10 9"/>
+    <next/>
+    <edge type="bridge-clear" next="win"/>
+    <edge type="build-workshop" next="17" offsetX="9" offsetY="21"
+          limitX="10" limitY="22"/>
+    <edge type="build-depot" next="16" offsetX="5" offsetY="14"
+          limitX="15" limitY="26"/>
+    <edge type="build-workshop" next="5" offsetX="10" offsetY = "9"
+          limitX="11" limitY="10"/>
+    <edge type="click-next" next="3"/>
+  </state>
+  <state name="3" button="build-workshop">
+    <text>Click on the build workshop button so we can scavenge the valuable resources.</text>
+    <edge type="bridge-clear" next="win"/>
+    <edge type="build-workshop" next="17" offsetX="9" offsetY="21"
+          limitX="10" limitY="22"/>
+    <edge type="build-depot" next="16" offsetX="5" offsetY="14"
+          limitX="15" limitY="26"/>
+    <edge type="build-workshop" next="5" offsetX="10" offsetY = "9"
+          limitX="11" limitY="10"/>
+    <edge type="start-build-workshop" next="4"/>
+  </state>
+  <state name="4" posX="10" posY="9">
+    <text>Click on the entrance to the house to build a workshop there. This workshop will collect the resources in a building over time and return them to the depot.</text>
+    <edge type="bridge-clear" next="win"/>
+    <edge type="build-workshop" next="17" offsetX="9" offsetY="21"
+          limitX="10" limitY="22"/>
+    <edge type="build-depot" next="16" offsetX="5" offsetY="14"
+          limitX="15" limitY="26"/>
+    <edge type="build-workshop" next="5" offsetX="10" offsetY = "9"
+          limitX="11" limitY="10"/>
+    <edge type="cancel-build" next="3"/>
+  </state>
+  <state name="5" posX="10" posY="9">
+    <text>There are a lot of resources there and it will take a long time for one survivor to collect them all. Lets speed things up. Click on the new workshop.</text>
+    <edge type="bridge-clear" next="win"/>
+    <edge type="build-workshop" next="17" offsetX="9" offsetY="21"
+          limitX="10" limitY="22"/>
+    <edge type="build-depot" next="16" offsetX="5" offsetY="14"
+          limitX="15" limitY="26"/>
+    <edge type="select-workshop" next="6"/>
+  </state>
+  <state name="6" button="workshop-increase">
+    <text>Click the plus button to increase the worker quota. New workers will start working here when available and speed up the collection.</text>
+    <edge type="bridge-clear" next="win"/>
+    <edge type="build-workshop" next="17" offsetX="9" offsetY="21"
+          limitX="10" limitY="22"/>
+    <edge type="build-depot" next="16" offsetX="5" offsetY="14"
+          limitX="15" limitY="26"/>
+    <edge type="select-nothing" next="5"/>
+    <edge type="click-add-survivors" next="7" offsetX="10" offsetY="9" limitX="11" limitY="10"/>
+  </state>
+  <state name="7">
+    <text>You can see how many resources are left to extract on the right. Increase the survivor quota to 10, then click next.</text>
+    <next/>
+    <edge type="bridge-clear" next="win"/>
+    <edge type="build-workshop" next="17" offsetX="9" offsetY="21"
+          limitX="10" limitY="22"/>
+    <edge type="build-depot" next="16" offsetX="5" offsetY="14"
+          limitX="15" limitY="26"/>
+    <edge type="click-next" next="8"/>
+  </state>
+  <state name="8">
+    <text>There are three kinds of resources: Ammo, Boards, and Survivors.</text>
+    <next/>
+    <edge type="bridge-clear" next="win"/>
+    <edge type="build-workshop" next="17" offsetX="9" offsetY="21"
+          limitX="10" limitY="22"/>
+    <edge type="build-depot" next="16" offsetX="5" offsetY="14"
+          limitX="15" limitY="26"/>
+    <edge type="click-next" next="9"/>
+  </state>
+  <state name="9">
+    <text>Ammo is used by snipers to shoot zombies.</text>
+    <next/>
+    <edge type="bridge-clear" next="win"/>
+    <edge type="build-workshop" next="17" offsetX="9" offsetY="21"
+          limitX="10" limitY="22"/>
+    <edge type="build-depot" next="16" offsetX="5" offsetY="14"
+          limitX="15" limitY="26"/>
+    <edge type="click-next" next="10"/>
+  </state>
+  <state name="10">
+    <text>Boards are used to build sniper towers and barricades.</text>
+    <next/>
+    <edge type="bridge-clear" next="win"/>
+    <edge type="build-workshop" next="17" offsetX="9" offsetY="21"
+          limitX="10" limitY="22"/>
+    <edge type="build-depot" next="16" offsetX="5" offsetY="14"
+          limitX="15" limitY="26"/>
+    <edge type="click-next" next="11"/>
+  </state>
+  <state name="11">
+    <text>Survivors carry resources around and staff buildings.</text>
+    <next/>
+    <edge type="bridge-clear" next="win"/>
+    <edge type="build-workshop" next="17" offsetX="9" offsetY="21"
+          limitX="10" limitY="22"/>
+    <edge type="build-depot" next="16" offsetX="5" offsetY="14"
+          limitX="15" limitY="26"/>
+    <edge type="click-next" next="12"/>
+  </state>
+  <state name="12" button="total-resources">
+    <text>When you increase quotas and spend resources, these numbers go down. If they are negative, that means you&apos;ve allocated more resources than you have.</text>
+    <next/>
+    <edge type="bridge-clear" next="win"/>
+    <edge type="build-workshop" next="17" offsetX="9" offsetY="21"
+          limitX="10" limitY="22"/>
+    <edge type="build-depot" next="16" offsetX="5" offsetY="14"
+          limitX="15" limitY="26"/>
+    <edge type="click-next" next="13"/>
+  </state>
+  <state name="13">
+    <text>There are no zombies on this island, and we need to keep it that way by blowing up the bridge which gives them access.</text>
+    <next/>
+    <edge type="bridge-clear" next="win"/>
+    <edge type="build-workshop" next="17" offsetX="9" offsetY="21"
+          limitX="10" limitY="22"/>
+    <edge type="build-depot" next="16" offsetX="5" offsetY="14"
+          limitX="15" limitY="26"/>
+    <edge type="click-next" next="14"/>
+  </state>
+  <state name="14" button="build-depot">
+    <text>We need to expand our supply lines to cover the bridge. Click the build depot button.</text>
+    <edge type="bridge-clear" next="win"/>
+    <edge type="build-workshop" next="17" offsetX="9" offsetY="21"
+          limitX="10" limitY="22"/>
+    <edge type="build-depot" next="16" offsetX="5" offsetY="14"
+          limitX="15" limitY="26"/>
+    <edge type="start-build-depot" next="15"/>
+  </state>
+  <state name="15" posX="9" posY="19">
+    <action type="move-map" arg="9 19"/>
+    <text>Click to place the depot as far south as you can.</text>
+    <edge type="bridge-clear" next="win"/>
+    <edge type="build-workshop" next="17" offsetX="9" offsetY="21"
+          limitX="10" limitY="22"/>
+    <edge type="cancel-build" next="14"/>
+    <edge type="build-depot" next="16" offsetX="5" offsetY="14"
+          limitX="15" limitY="26"/>
+  </state>
+  <state name="16" posX="9" posY="21">
+    <text>Now build a workshop on the dynamite location to set charges and blow up the bridge.</text>
+    <edge type="bridge-clear" next="win"/>
+    <edge type="build-workshop" next="17" offsetX="9" offsetY="21"
+          limitX="10" limitY="22"/>
+  </state>
+  <state name="17">
+    <text>Click on the workshop to see the progress it is making.</text>
+    <edge type="bridge-clear" next="win"/>
+    <edge type="select-workshop" next="18" offsetX="9" offsetY="21"
+          limitX="10" limitY="22"/>
+  </state>
+  <state name="18">
+    <text>Many hands make light work. Increase the number of survivors here as much as you can to speed the work, then click next.</text>
+    <next/>
+    <edge type="bridge-clear" next="win"/>
+    <edge type="click-next" next="19"/>
+  </state>
+  <state name="19">
+    <text>Clearing an island of zombies and blowing the bridges is how you win. Sit back and wait for victory.</text>
+    <edge type="bridge-clear" next="win"/>
+  </state>
+  <state name="win">
+    <action type="win">
+      <arg>
+*Begin Transmission*\n\n
+Well done on that demolition work, soldier. Destroying bridges will be crucial to preventing new zombies from entering an area. The last thing you need to learn is how to manage your snipers effectively in the field.\n\n
+*End Transmission*
+</arg>
+    </action>
+  </state>
+</script>
+</map>

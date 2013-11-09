@@ -1,0 +1,87 @@
+<map name="Basic Training" difficulty="0" sizeX="25" sizeY="19" startX="12" startY="9" >
+<terrain>
+aa1ea42d3c903d1fa27aa713a477f59c.eNoVikESgDAIxFwsC
+y2tdPTHvly85JDEVBOmK8GwBs5poPqP8ArGQrk2nWgrFNAewtu
+g9lSM3UVa2gle1JrZ8W6XY4wE8AF+HwLw
+</terrain>
+<briefing>
+No one knows how it happened. Soon, there&apos;ll be no one left to
+care. But the simple truth is that overnight a globe full of civilized
+people festered, and changed, and became something less than
+civilized. Less than human. And if you weren&apos;t the smartest, or the
+fastest, or the best-armed on your block, well... you&apos;re one of them
+now.\n\n
+*Begin Transmission*\n\n
+The hordes of undead are growing. We need to get you up to speed as fast as possible. Lets start with the basics.\n\n
+*End Transmission*
+</briefing>
+<script>
+  <state name="start" posX="16" posY="8">
+    <text>Your depot is the backbone of your supply network</text>
+    <next/>
+    <edge type="click-next" next="1"/>
+    <edge type="start-build-sniper" next="4"/>
+    <edge type="build-sniper" next="5"/>
+  </state>
+  <state name="1">
+    <text>Depots store your resources and send them to other towers.</text>
+    <next/>
+    <edge type="click-next" next="2"/>
+    <edge type="start-build-sniper" next="4"/>
+    <edge type="build-sniper" next="5"/>
+  </state>
+  <state name="2">
+    <text>Everything must be built within 7 tiles of a depot.</text>
+    <next/>
+    <edge type="click-next" next="3"/>
+    <edge type="start-build-sniper" next="4"/>
+    <edge type="build-sniper" next="5"/>
+  </state>
+  <state name="3" button="build-sniper">
+    <text>We need a sniper tower to protect us from zombies. Click the build sniper button on the left.</text>
+    <edge type="start-build-sniper" next="4"/>
+    <edge type="build-sniper" next="5"/>
+  </state>
+  <state name="4" posX="12" posY="8">
+    <text>Now click to place a sniper tower at the indicated location. You can hold down shift to easily place multiple towers.</text>
+    <edge type="build-sniper" next="5"/>
+    <edge type="cancel-build" next="3"/>
+  </state>
+  <state name="5" posX="12" posY="10">
+    <text>Build one more sniper tower here to support the other one. The sniper tower&apos;s range is shown in light blue.</text>
+    <edge type="build-sniper" next="6"/>
+  </state>
+  <state name="6" button="build-barricade">
+    <text>If a zombie gets too close to a sniper, it will be toast. We need barricades to hold off the hordes. Click to build a barricade.</text>
+    <edge type="start-build-barricade" next="7"/>
+  </state>
+  <state name="7" posX="10" posY="10">
+    <text>Place the new barricade a bit in front of the snipers. Make sure at least one side is clear so the barricade can be properly supplied.</text>
+    <edge type="build-barricade" next="8"/>
+    <edge type="cancel-build" next="6"/>
+  </state>
+  <state name="8" posX="10" posY="9">
+    <text>Place another barricade to seal off the road. Otherwise some zombies might bypass your defenses.</text>
+    <edge type="build-barricade" next="9"/>
+  </state>
+  <state name="9">
+    <text>Zombies are coming! Get ready!</text>
+    <action type="countdown" arg="10"/>
+    <edge type="countdown-complete" next="10"/>
+  </state>
+  <state name="10">
+    <text>Hold off this wave of zombies, and victory will be yours!</text>
+    <action type="horde" arg="5 5 9"/>
+    <action type="horde" arg="5 5 10"/>
+    <edge type="zombie-clear" next="11"/>
+  </state>
+  <state name="11">
+    <action type="win">
+      <arg>
+*Begin Transmission*\n\n
+Congratulations! This was your first meeting with our awful enemy, but you still have much to learn.\n\n
+*End Transmission*</arg>
+    </action>
+  </state>
+</script>
+</map>

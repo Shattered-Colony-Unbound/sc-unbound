@@ -1,0 +1,651 @@
+index
+
+##
+
+<p><span class="title">Index</span></p>\n
+
+<a href="event:goal">Goal</a>
+\n\n
+<a href="event:timer">Timer</a>
+\n\n
+<a href="event:resources">Resources</a>
+<li><a href="event:ammo">Ammo</a></li>
+<li><a href="event:boards">Boards</a></li>
+<li><a href="event:survivors">Survivors</a></li>
+\n\n
+Towers
+<li><a href="event:sniper">Sniper</a></li>
+<li><a href="event:workshop">Workshop</a></li>
+<li><a href="event:depot">Depot</a></li>
+<li><a href="event:barricade">Barricade</a></li>
+\n\n
+<a href="event:buildings">Buildings</a>\n
+<a href="event:building_types">Building Types</a>
+<li><a href="event:house">House</a></li>
+<li><a href="event:office">Office</a></li>
+<li><a href="event:apartment">Apartment</a></li>
+<li><a href="event:mall">Mall</a></li>
+<li><a href="event:police_station">Police Station</a></li>
+<li><a href="event:hardware_store">Hardware Store</a></li>
+<li><a href="event:church">Church</a></li>
+<li><a href="event:hospital">Hospital</a></li>
+\n\n
+<a href="event:zombies">Zombies</a>\n
+<li><a href="event:zombie_hordes">Zombie Hordes</a></li>
+<li><a href="event:noise">Noise</a></li>
+<li><a href="event:scent">Scent</a></li>
+\n\n
+<a href="event:map_features">Map Features</a>
+<li><a href="event:charges">Charges</a></li>
+<li><a href="event:rubble">Rubble</a></li>
+\n\n
+<a href="event:map_editor">Map Editor</a>
+
+##
+
+goal
+
+##
+
+<p><span class="title">Goal</span></p>\n
+<p>
+  Without safe havens, civilization will be destroyed. Your goal is to
+  secure the city by slowly expanding your perimeter, killing <a
+  href="event:zombies">zombies</a> and looting <a
+  href="event:resources">resources</a> as you go, until you reach and
+  destroy each bridge by setting off the <a
+  href="event:charges">charges</a> that were airlifted in. Only once
+  the island is secure can you think about the future-- and whether
+  you'll live to see it.
+</p>
+
+##
+
+timer
+
+##
+
+<p><span class="title">Timer</span></p>\n
+<p>
+  The timer is your friend and your worst enemy. It ticks down the
+  precious seconds until the next <a
+  href="event:zombie_horde">horde</a> arrives, so keep a close eye on
+  it. If you can't take the heat, you can pause the game by
+  clicking on the timer.
+</p>
+
+##
+
+resources
+
+##
+
+<p><span class="title">Resources</span></p>\n
+<p>
+  You'll need three things for this mission to succeed: <a
+  href="event:boards">lumber</a>, <a href="event:ammo">ammo</a>, and
+  fellow <a href="event:survivors">survivors</a>. You'll find these by
+  looting the city's eerily quiet <a
+  href="event:buildings">buildings</a>. But plan ahead: some types
+  contain more of certain resources.
+</p>
+
+##
+
+ammo
+
+##
+
+<p><span class="title">Ammo</span></p>\n
+<p>
+  <img src="pedia_ammo">
+  The folks who once lived here had time to stockpile ammunition, but
+  in the end it didn't save them. Maybe it will save you. Ammo is one
+  of three <a href="event:resources">resources</a> your team is
+  searching for in <a href="event:buildings">buildings</a>. Once your
+  people get it to a supply <a href="event:depot">depot</a>, it can be
+  distributed to your <a href="event:sniper">snipers</a>. You can bet
+  your ass they'll need it.
+</p>
+
+##
+
+boards
+
+##
+
+<p><span class="title">Boards</span></p>\n
+<p>
+  <img src="pedia_boards">
+  You've ordered your team to strip all spare lumber from any <a
+  href="event:buildings">buildings</a> they reconnoiter. Once they
+  haul it back to the nearest <a href="event:depot">depot</a>, it will
+  fuel your survival: you can order survivors to build <a
+  href="event:sniper">sniper towers</a> or <a
+  href="event:barricade">barricades</a>. You can even
+  upgrade your sniper towers... if there's time.
+</p>
+
+##
+
+survivors
+
+##
+
+<p><span class="title">Survivors</span></p>\n
+<p>
+  <img src="pedia_survivors">
+  Anyone left alive is holed up deep inside one of these <a
+  href="event:buildings">buildings</a>, scared and hungry. But their
+  fear has kept them alive, and they'll be eager to join you, once
+  your scouts find them. You can put them to work ferrying <a
+  href="event:resources">supplies</a>, scavenging buildings, making <a
+  href="event:barricade">fortifications</a>, manning <a
+  href="event:sniper">sniper towers</a>, and even setting <a
+  href="event:charges">charges</a>. If you survive long enough to
+  reach them.
+</p>
+
+##
+
+sniper
+
+##
+
+<p><span class="title">Sniper</span></p>\n
+<p>
+  <img src="pedia_sniper">
+  Anyone who's handy with a rifle gets sent to man these towers,
+  thrown together from <a href="event:boards">boards</a> and
+  sweat. Send more <a href="event:survivors">survivors</a> to a tower
+  and they'll act as spotters, increasing the accuracy of your shots;
+  and make damn sure your snipers have enough <a 
+  href="event:ammo">ammo</a>. If you have the time
+  and boards, you can upgrade a sniper tower, building it up higher
+  to improve your range.
+</p>\n
+<p>
+  Your snipers are good shots, and sharp: they'll obey tactical orders
+  without question, like firing in the air to attract the <a
+  href="event:zombies">zombies</a>, or holding fire to avoid a
+  swarm. But the towers themselves are rickety scrap heaps; one good
+  swipe from those monsters and they'll collapse. So don't let
+  them get within swiping distance.
+</p>
+
+##
+
+workshop
+
+##
+
+<p><span class="title">Workshop</span></p>\n
+<p>
+  <img src="pedia_workshop">
+  If something needs doing, assign a <a
+  href="event:survivors">civvie</a> to the job by building a workshop
+  there: at the entrance to a <a href="event:buildings">building</a> 
+  to loot it, on a piece of <a href="event:rubble">rubble</a> to clear
+  it, or on the bridge <a href="event:charges">charges</a> to prime
+  them to blow. Up the quota of survivors at a workshop to get the job done faster. Collected <a
+  href="event:resources">resources</a> get taken
+  back to the nearest <a href="event:depot">depot</a>, ready to be ferried wherever they're needed.
+</p>\n
+<p>
+  When the job's done, the workshop automatically closes and the
+  assigned survivors return to base.
+</p>
+
+##
+
+depot
+
+##
+
+<p><span class="title">Depot</span></p>\n
+<p>
+  <img src="pedia_depot">
+  Your command posts and sanctuaries against the <a
+  href="event:zombies">horde</a>. All the <a
+  href="event:resources">resources</a> and <a
+  href="event:survivors">survivors</a> you gather will be staged at
+  the nearest depot, and you can only build new structures close by
+  a depot which can keep them supplied.
+</p>\n
+<p>
+  As you start to control more area, you should keep a tight eye on
+  your supply lines. Each <a href="event:sniper">sniper tower</a> or
+  <a href="event:workshop">workshop</a> is connected to a depot; add
+  and remove supply lines to make sure your survivors are being routed
+  as efficiently as possible.
+</p>
+
+##
+
+barricade
+
+##
+
+<p><span class="title">Barricade</span></p>\n
+<p>
+  <img src="pedia_barricade">
+  Unmanned heaps of <a href="event:boards">boards</a> and other junk that should
+  hold back the <a href="event:zombies">horde</a>, though not for
+  long. Each costs 10 boards to build and will stand up to about that
+  many blows from a zombie before it collapses. You can assign <a
+  href="event:survivors">survivors</a> to repair them if you act fast,
+  and increase the board quota to add durability, but you can only put
+  off the inevitable: those things will break through, sooner or
+  later.
+</p>\n
+<p>
+  But here's the good news: zombies held up by a barricade are easy
+  pickings for your <a href="event:sniper">snipers</a>, and the things
+  are usually too stupid to go around them. Put up a barricade between
+  your sniper towers and the advancing horde and pick them off like
+  ducks in a shooting gallery.
+</p>
+
+##
+
+buildings
+
+##
+
+<p><span class="title">Buildings</span></p>\n
+<p>
+  Whoever once owned them is dead now. Inside are exactly three things
+  you care about: <a href="event:boards">lumber</a>, <a
+  href="event:ammo">ammo</a>, and <a
+  href="event:survivors">survivors</a>. The quicker you can get them
+  out, the better your chances. But be careful: <a
+  href="event:zombies">zombies</a> are lurking inside too, and any
+  loud <a href="event:noise">noise</a> nearby will draw them out into
+  the street. To feed.
+</p>\n
+<p>
+  Through initial recon runs you know a little about what's inside
+  each building. A green triangle means a cakewalk: plenty of loot and
+  no sign of trouble. But yellow, orange, and red triangles point to
+  increasing levels of bad news inside: zombies, hiding and waiting in
+  the quiet shadows.
+</p>\n
+<p>
+  See also: <a href="event:building_types">Building Types</a>
+</p>
+
+##
+
+building_types
+
+##
+
+<p><span class="title">Building Types</span></p>\n
+<p>
+  Based on a few scouting runs and detailed intel on the <a
+  href="event:zombies">zombies</a>, you have a sense of what to expect
+  inside each type of <a href="event:buildings">building</a>.
+</p>\n
+
+<li><a href="event:house">House</a></li>
+<li><a href="event:office">Office</a></li>
+<li><a href="event:apartment">Apartment</a></li>
+<li><a href="event:mall">Mall</a></li>
+<li><a href="event:police_station">Police Station</a></li>
+<li><a href="event:hardware_store">Hardware Store</a></li>
+<li><a href="event:church">Church</a></li>
+<li><a href="event:hospital">Hospital</a></li>
+
+##
+
+house
+
+##
+
+<p><span class="title">House</span></p>\n
+<p>
+  <img src="pedia_house">
+  You can't expect to find too many <a
+  href="event:resources">resources</a> in these yuppie McMansions, but
+  on the plus side, 2.4 kids can't turn into too many <a
+  href="event:zombies">zombies</a>.
+</p>
+
+##
+
+office
+
+##
+
+<p><span class="title">Office</span></p>\n
+<p>
+  <img src="pedia_office">
+  A good source for basic <a href="event:resources">resources</a> in
+  reasonable quantities, and only a moderate amount of <a
+  href="event:zombies">zombies</a>. Bet these schmucks wish they
+  hadn't put in for overtime now.
+</p>
+
+##
+
+apartment
+
+##
+
+<p><span class="title">Apartment</span></p>\n
+<p>
+  <img src="pedia_apartment">
+  <a href="event:resources">Resource</a>-heavy, but swarming with <a
+  href="event:zombies">former occupants</a>. Watch out.
+</p>
+
+
+##
+
+mall
+
+##
+
+<p><span class="title">Mall</span></p>\n
+<p>
+  <img src="pedia_mall">
+  The mother lode for <a href="event:resources">resources</a>, but
+  swarming with <a href="event:zombies">monsters</a>: ain't no free
+  lunch in this food court.
+</p>
+
+##
+
+police_station
+
+##
+
+<p><span class="title">Police Station</span></p>\n
+<p>
+  <img src="pedia_police_station">
+  <a href="event:ammo">Ammunition</a> by the truckful, but since cops
+  were usually the first ones infected, they've had plenty of time to
+  feed and grow strong. Be on your guard.
+</p>
+
+##
+
+hardware_store
+
+##
+
+<p><span class="title">Hardware Store</span></p>\n
+<p>
+  <img src="pedia_hardware_store">
+  Your best source for <a href="event:boards">lumber</a>, but these
+  seem to attract the <a href="event:zombies">zombies</a>, too. Maybe
+  it's the smell of sawdust.
+</p>
+
+##
+
+church
+
+##
+
+<p><span class="title">Church</span></p>\n
+<p>
+  <img src="pedia_church">
+  You can bet your ass a congregation's worth of <a
+  href="event:survivors">survivors</a> is holed up inside. But the
+  overgrown graveyard and shadowy halls inside offer far too many
+  perfect hiding places for <a href="event:zombies">unholy things</a>.
+</p>
+
+##
+
+hospital
+
+##
+
+<p><span class="title">Hospital</span></p>\n
+<p>
+  <img src="pedia_hospital">
+  The sick and weak were the first to be taken, God rest their
+  souls. There's precious little hope of finding survivors here. What
+  roams the halls now is beyond your skill to heal.
+</p>
+
+##
+
+zombies
+
+##
+
+<p><span class="title">Zombies</span></p>\n
+<p>
+  <img src="pedia_zombies">
+  Keep two things in mind and you have a chance to stay alive. First,
+  their sense of hearing is far more acute than their vision. They're
+  attracted by <a href="event:noise">noise</a>-- gunfire or
+  construction-- and will mindlessly move towards it. They can <a 
+  href="event:scent">smell</a> you too, so keep your distance and
+  stay quiet.
+</p>\n
+<p>
+  Second, it only takes one good shot to the head to drop them. On the
+  flip side, one bite from those rotten teeth and it's curtains for
+  you. If you get within hand-to-hand distance, you're as good as
+  dead. Scratch that. You're worse than dead, because soon you'll be
+  one of them.
+</p>\n
+<p>
+  See also: <a href="event:zombie_hordes">Zombie Hordes</a>
+</p>
+
+##
+
+zombie_hordes
+
+##
+
+<p><span class="title">Zombie Hordes</span></p>\n
+<p>
+  These <a href="event:zombies">things</a> seem to like to move in
+  packs, or waves. Every so often a new horde will sweep into town
+  across a bridge, or swarm out of unexplored buildings angry and
+  drooling. The hordes only get bigger each time it happens. Better
+  get to those bridge <a href="event:charges">charges</a> fast.
+</p>
+
+##
+
+noise
+
+##
+
+<p><span class="title">Noise</span></p>\n
+  The <a href="event:zombies">zombies</a> flock to noise like moths to
+  flame. Loud noises like gunshots bring them from far away, but
+  construction noise wakes up the ones at a medium distance. Remember
+  that it's not just the ones in the street you have to worry about;
+  most of the <a href="event:buildings">buildings</a> are swarming
+  with them too.
+</p>
+
+##
+
+scent
+
+##
+<p><span class="title">Scent</span></p>\n
+<p>
+  Almost anything you'll do makes <a href="event:noise">noise</a>,
+  which attracts the <a href="event:zombies">zombies</a>. But those
+  bastards can smell you, too. Walk past some and they'll follow your
+  scent trail all the way back to base. Noise seems more important to
+  them, though; distract them with a loud noise and they'll forget
+  about the delicious scent of flesh-- for a while.
+</p>
+
+##
+
+map_features
+
+##
+
+<p><span class="title">Map Features</span></p>\n
+<p>
+  Keep an eye on the topography around your <a
+  href="event:depot">depots</a>. <a
+  href="event:survivors">Survivors</a> can't move through <a
+  href="event:barricade">barricades</a> or other structures, so make
+  sure they have clear paths to work, and run. Mind the urban warfare tradeoff: wide streets make your
+  structures harder to defend, and narrow streets make them harder to
+  supply. And keep an eye on where the bridges are, since both the <a
+  href="event:zombie_hordes">hordes</a> and the <a
+  href="event:charges">charges</a> are in that direction.
+</p>\n
+<p>
+  <a href="event:rubble">Destroyed structures</a> block construction,
+  and must be cleared by building a <a
+  href="event:workshop">workshop</a> on them. Also watch for parks,
+  whose vegetation provides cover and is hard for <a
+  href="event:sniper">snipers</a> to shoot through.
+</p>
+
+##
+
+charges
+
+##
+
+<p><span class="title">Charges</span></p>\n
+<p>
+  <img src="pedia_charges">
+Your only prayer of surviving this mission is to get to the charges at each bridge, build <a href="event:workshop">workshops</a> on them, and buy your team enough time to get them ready to blow. 
+</p>
+
+##
+
+rubble
+
+##
+
+<p><span class="title">Rubble</span></p>\n
+<p>
+  <img src="pedia_rubble">
+Jetsam left over from the initial attack, or the sorry ruins of your own construction. Either way, it'll have to go if you want to clear a path for <a href="event:survivors">survivors</a> or build new structures. Build a <a href="event:workshop">workshop</a> on a tile of rubble to clear it and recover most of its <a href="event:resources">resources</a>. 
+</p>
+
+##
+
+map_editor
+
+##
+
+<p><span class="title">Map Editor</span></p>\n
+<p>
+When editing a map, you can click the question mark icon in the
+lower-left to access this help again.
+</p>\n
+
+<p><span class="title">Boxes</span></p>\n
+<p>
+  Boxes represent areas or buildings. The outlines of boxes are shown
+  by thin white lines surrounding them. A box might be a single office
+  or a street or an area of water.
+</p>\n
+<p>
+  When you create a new map, boxes representing the ocean around an
+  island are created for you automatically. You can adjust them or
+  move them aside to create bridges. I recommend that you always make
+  sure to leave at least the starting amount of water around the edges
+  so that the status displays on the edges of the screens do not
+  interfere with the player's visibility.
+</p>\n
+
+<p><span class="title">Creating a Box</span></p>\n
+<p>
+  To create a new box, move the mouse to an empty (white) area of the
+  map. Click and drag. A green rectangle will follow your cursor
+  showing where the new box will be placed. If the rectangle turns
+  red, that means the prospective box overlaps an existing box and
+  will not be created. When you have a size that you want, release the
+  mouse and a new box will be created.
+</p>\n
+
+<p><span class="title">Resizing a Box</span></p>\n
+<p>
+  Existing boxes can be resized by dragging their corners. Move the
+  mouse so it is inside the box you want to resize near one of the
+  corners. Click and drag. You can resize the box to any dimension you
+  want. If it overlaps with another box or is too small for the
+  current box type, it will turn red.  
+</p>\n
+
+<p><span class="title">Selecting</span></p>\n
+<p>
+  Select boxes and squares to edit them. A box or square which is
+  selected has a black outline. Click on an unselected box to select
+  it. Click within a selected box to select a particular square.
+</p>\n
+
+<p><span class="title">Editing Boxes</span></p>\n
+<p>
+  You can edit boxes using the combo-box and buttons on the
+  left. Click on the box you want to edit. Then click on the combo-box
+  widget in the upper-left and select what kind of area you want the
+  box to be. Keep in mind that some box types have a minimum size and
+  a box must be that size before you can change to those types.
+</p>\n
+
+<p>
+  All boxes can be deleted using the delete button in the
+  lower-left. Buildings can have zombies and resources added to
+  them. Some kinds of boxes, like bridges, have a direction which you
+  can modify using the rotate and reflect buttons.
+</p>\n
+
+<p><span class="title">Editing Squares</span></p>\n
+<p>
+  In addition to editing boxes as a whole, individual squares may be
+  edited as well. Some buildings allow you to set an entrance anywhere
+  on the perimiter. On those boxes, select the square where you want
+  the entrance and click 'Set Entrance' on the left.
+</p>\n
+
+<p>
+  You can also place zombies, rubble, or towers on any square where
+  they are normally allowed. You can add obstacles which permanently
+  block a square. You can edit the resources available at any tower or
+  rubble location. You can also select towers to change their quotas
+  or to create and destroy trade links.
+</p>\n
+
+<p>
+  Finally, you can select a square and remove the obstacle, rubble, or
+  tower there with the delete button. To remove zombies just click '-'
+  next to the zombie count.
+</p>\n
+
+<p><span class="title">Saving, Loading, and Testing</span></p>\n
+<p>
+  Open the system menu by clicking the system button in the lower-left
+  corner. From the system menu, you can save, load, and test the
+  current map.
+</p>\n
+
+<p>
+  When you click "Save Map", the map is encoded into a plain text
+  format and displayed in the white text box. You can copy and paste
+  that into a file for later use.
+</p>\n
+
+<p>
+  To load a map, copy a the text for a map into the text box. Make
+  sure that the only text in the text box is the map you wish to
+  load. Then click "Load Map" to load that map for editing.
+</p>\n
+
+<p>
+  You can also test a map by clicking "Test Map". When you do, you
+  will begin playing the current map. If you win or lose, you will be
+  returned to the map editor. You can also end the test by opening the
+  system menu and clicking "Edit Map".
+</p>

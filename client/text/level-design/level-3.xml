@@ -1,0 +1,112 @@
+<map name="Bang" difficulty="0" sizeX="25" sizeY="30" startX="12" startY="9" >
+<terrain>
+8d3979175577820f4d5fe645fca194c1.eNody9ESgyAMRFEX2
+MSAELTV/q72ywt9OXNndlb58ZBypYFZItogFEaWkmMUqwjCmiB
+eEaWPUrZoerRgSjKpDyQTFBohbZbPskuRvIOpH/Prg32f6xmg/
+Zq0we4IyeZqB5KsDdT1hXRvhtsKnty5LE/5W/+26Xc7w7L4G8A
+PlKcJBA
+</terrain>
+<briefing>
+*Begin Transmission*\n\n
+We don&apos;t have much time left. Outbreaks have been reported on every major continent. I&apos;ll show you how to use your snipers well, otherwise you will be slaughtered out there.\n\n
+*End Transmission*
+</briefing>
+<script>
+  <state name="start" posX="12" posY="9">
+    <text>There are zombies to the north, and we don&apos;t have any ammo!</text>
+    <next/>
+    <edge type="click-next" next="1"/>
+  </state>
+  <state name="1">
+    <text>Luckily, they haven&apos;t heard us yet. They will stay where they are until they hear a noise.</text>
+    <next/>
+    <edge type="click-next" next="2"/>
+  </state>
+  <state name="2" posX="11" posY="16">
+    <text>Before we do anything else, we need to restock on ammo. There is some rubble left on the street. Build a workshop to search for resources.</text>
+    <action type="move-map" arg="11 16" />
+    <edge type="build-workshop" next="3"/>
+  </state>
+  <state name="3">
+    <text>In addition to finding resources, the rubble must be cleared away before you can build other towers there.</text>
+    <next/>
+    <edge type="click-next" next="4"/>
+  </state>
+  <state name="4">
+    <text>Build workshops on the other rubble tiles and add survivors until you have a good stock of ammo. Then click next.</text>
+    <next/>
+    <edge type="click-next" next="5"/>
+  </state>
+  <state name="5" posX="12" posY="16">
+    <text>Now build a sniper to take out these three zombies. Don&apos;t worry if the zombies aren&apos;t in range yet, we&apos;ll take care of that.</text>
+    <edge type="build-sniper" next="6"/>
+  </state>
+  <state name="6">
+    <text>If we make some noise, we can pull the zombies within range. And shooting off a round should do that. Select your sniper.</text>
+    <edge type="select-sniper" next="7"/>
+  </state>
+  <state name="7" button="sniper-shoot">
+    <text>Now tell your sniper to shoot into the air. That will attract all nearby zombies.</text>
+    <edge type="select-nothing" next="6"/>
+    <edge type="click-shoot" next="8"/>
+  </state>
+  <state name="8">
+    <text>Your sniper should make short work of these zombies. You can often draw zombies out of an area to clear it in a controlled manner.</text>
+    <next/>
+    <edge type="click-next" next="9"/>
+  </state>
+  <state name="9" button="sniper-upgrade">
+    <text>Your snipers are versatile and you can improve them in several ways. First, you can upgrade your sniper to increase its range.</text>
+    <next/>
+    <edge type="click-upgrade" next="10"/>
+    <edge type="click-next" next="10"/>
+  </state>
+  <state name="10" button="sniper-increase-survivors">
+    <text>Second, you can add extra survivors as spotters. Each additional survivor increases accuracy.</text>
+    <next/>
+    <edge type="click-add-survivors" next="11"/>
+    <edge type="click-next" next="11"/>
+  </state>
+  <state name="11" button="sniper-increase-ammo">
+    <text>Third, you can increase the amount of ammo. More ammo means that the sniper tower can shoot longer between resupplies</text>
+    <next/>
+    <edge type="click-add-ammo" next="12"/>
+    <edge type="click-next" next="12"/>
+  </state>
+  <state name="12">
+    <text>Finally, be sure to use barricades to protect your vulnerable snipers. A sniper is much more accurate when attacking zombies delayed by a barricade.</text>
+    <next/>
+    <edge type="click-next" next="13"/>
+  </state>
+  <state name="13">
+    <text>Set up a defensive perimeter here, upgrading your towers as necessary. Click next when you are ready for the final zombie attack.</text>
+    <next/>
+    <edge type="click-next" next="14"/>
+  </state>
+  <state name="14">
+    <text>Make sure you have at least two sniper towers and plenty of ammo. Then click next.</text>
+    <next/>
+    <edge type="click-next" next="15"/>
+  </state>
+  <state name="15">
+    <text>Defeat the zombie swarms!</text>
+    <action type="horde" arg="4 12 5"/>
+    <action type="horde" arg="3 5 11"/>
+    <action type="horde" arg="4 19 11"/>
+    <edge type="zombie-clear" next="16"/>
+  </state>
+  <state name="16">
+    <action type="win">
+      <arg>
+*Begin Transmission*\n\n
+For the next part of the course...\n\n
+
+One minute...\n\n
+
+I&apos;ve just recieved reports that a zombie horde has overrun the final training facility. This time will be for real. Get ready.\n\n
+*End Transmission*
+</arg>
+    </action>
+  </state>
+</script>
+</map>

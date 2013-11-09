@@ -1,0 +1,35 @@
+-------------------------
+Shattered Colony: Unbound
+Compilation Instructions
+-------------------------
+
+Shattered Colony is written mostly in haXe. The haXe is compiled into ActionScript and then linked with the art assets contained in sc-unbound.fla to create the resulting application.
+
+------------
+Dependencies
+------------
+
+haXe: Install the latest version of haXe from http://haxe.org
+twister: Shattered Colony uses the Mersenne Twister haXe library. Once haXe is installed, you can run the following command line to install the library:
+
+  haxelib install twister
+
+cygwin/perl: Shattered Colony imports a lot of external text into the game. Everything from tooltips to error messages to the Zombipedia. This is linked into the game by parsing these files with custom scripts which assume Cygwin with Perl installed.
+
+-------------
+Build Process
+-------------
+
+(1) If you have changed any of the files in text/* re-run make-text.bat which adds the contents of those files to the code base.
+(2) Run either compile.bat or compile-music.bat to generate the ActionScript files
+    - compile.bat creates a version of the code which doesn't attempt to play music. Adding music to the game takes a significant amount of time. See below.
+    - compile-music.bat plays music in the game. This is used when putting out a public build.
+(3) Open sc-unbound.fla and publish using Adobe Flash CS3 or later.
+
+----------------------
+Building Without Music
+----------------------
+
+When you include music in the game, it slows down the build time significantly. In order to avoid including the music, make sure to run 'compile.bat' to avoid playing music in the game and remove 'MusicClip' from inside of the 'AssetClip' in sc-unbound.fla
+
+

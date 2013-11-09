@@ -1,0 +1,25 @@
+#include "level-design/level-1.xml"
+
+##
+
+#include "level-design/level-2.xml"
+
+##
+
+#include "level-design/level-3.xml"
+
+##
+
+#include "level-design/level-4.xml"
+
+##
+
+#include "level-design/level-5.xml"
+
+##
+
+#include "level-design/level-6.xml"
+
+##
+
+#include "level-design/level-7.xml"

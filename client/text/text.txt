@@ -1,0 +1,2014 @@
+toolTipStyleSheet
+
+p {
+  font-size: 14;
+  color: #333333
+}
+.title {
+  font-size: 16;
+  font-weight: bold;
+  color: #000000
+}
+.hotkey {
+  color: #0000ff
+}
+.status {
+  color: #008888
+}
+.survivor {
+  color: #008800
+}
+.cost {
+  color: #ff0000
+}
+
+##
+tutorialStyleSheet
+
+p {
+  font-size: 12;
+  color: #ffffff
+}
+.title {
+  font-size: 14;
+  font-weight: bold;
+  color: #ffff00
+}
+a {
+  font-size: 12;
+  text-decoration: underline;
+  color: #ffaaaa
+}
+##
+buttonStyleSheet
+
+.hotkey {
+  color: #dd0000
+}
+.status {
+  color: #0000dd
+}
+##
+pediaStyleSheet
+
+p {
+  font-size: 18;
+  color: #dddddd;
+}
+a {
+  font-size: 18;
+  text-decoration: underline;
+  color: #aaaaff;
+}
+.title {
+  font-size: 24;
+  font-weight: bold;
+  text-align: center;
+  color: #ffffff;
+}
+##
+mainNameDefaultInputText
+
+Anytown
+
+##
+replaySpeedBarLabel
+
+Speed
+
+##
+unpauseTip
+
+<p>
+  <span class="title">
+    Resume Game <span class="hotkey">[Space]</span>
+  </span>\n
+  Click to resume the game.
+</p>
+
+##
+pauseTip
+
+<p>
+  <span class="title">
+    Pause Game <span class="hotkey">[Space]</span>
+  </span>\n
+  Click to pause the game. You can still select structures and issue orders while paused.
+</p>
+
+##
+hideRangeTip
+
+<p>
+  <span class="title">
+    Hide Range <span class="hotkey">V</span>iew
+  </span>\n
+  Hide the global range view.
+</p>
+
+##
+showRangeTip
+
+<p>
+  <span class="title">
+    Show Range <span class="hotkey">V</span>iew
+  </span>\n
+  Show global range view. The range of every sniper tower will be
+  shown with a white overlay.
+</p>
+
+##
+jumpToDepotTip
+
+<p>
+  <span class="title">
+    <span class="hotkey">J</span>ump to Depot
+  </span>\n
+  Select the nearest depot and center it in the window.
+</p>
+
+##
+systemTip
+
+<p>
+  <span class="title">
+    System Menu<span class="hotkey">[Esc]</span>
+  </span>\n
+  Save, set options, restart, or quit.
+</p>
+
+##
+toggleTipTip
+
+<p>
+  <span class="title">
+    Toggle Tooltips <span class="hotkey">[?]</span>
+  </span>\n
+  Click here to turn off tool tips like this one.
+</p>
+
+##
+fleeTip
+
+<p>
+  <span class="title">
+    Flee <span class="hotkey">[Del]</span>
+  </span>\n
+  Abandon this structure and flee for safety, leaving behind any
+  resources. They may be recovered later with a workshop.
+</p>
+
+##
+noFleeTip
+
+<p>
+  <span class="title">
+    Cannot Flee
+  </span>\n
+  This is your last depot. There can be no further retreat from this structure.
+</p>
+
+##
+addSupplyTip
+
+<p>
+  <span class="title">
+    <span class="hotkey">A</span>dd Supply Line
+  </span>\n
+  Click here to create a supply line to another structure. The two structures
+  will send resources to each other as needed.
+</p>
+
+##
+backgroundAddSupplyTip
+
+<p>
+  <span class="title">
+    How To Add
+  </span>\n
+  Move the mouse to the structure you want to add a supply line to and
+  click it, or press escape to cancel.
+</p>
+
+##
+towerAddSupplyTip
+
+<p>
+  <span class="title">
+    Add Supply Line
+  </span>\n
+  If you click here, a new supply line will be created. You may press
+  escape to cancel.
+</p>
+
+##
+towerAlreadyExistsAddSupplyTip
+
+<p>
+  <span class="title">
+    Supply Line Already Exists
+  </span>\n
+  You cannot add a supply line here because the source depot already
+  has a supply line to this structure. You may press escape to cancel.
+</p>
+
+##
+towerSameTowerAddSupplyTip
+
+<p>
+  <span class="title">
+    Source Depot
+  </span>\n
+  A structure can't have a supply line to itself. You may press escape to cancel.
+</p>
+
+##
+removeSupplyTip
+
+<p>
+  <span class="title">
+    <span class="hotkey">R</span>emove Supply Line
+  </span>\n
+  Remove the supply line from this depot to another structure. After
+  removing the supply line, no new survivors will be sent to carry
+  resources between the two structures.
+</p>
+
+##
+gatherResourcesTip
+
+<p>
+  <span class="title">
+    Gather Resources
+  </span>\n
+  For a short time, gather nearby unallocated resources to this depot.
+  Click multiple times to increase the range and effect.
+</p>
+
+##
+backgroundRemoveSupplyTip
+
+<p>
+  <span class="title">
+    How To Remove
+  </span>\n
+  Move the mouse to the structure that you want to remove a supply line to
+  and click on it. The blue arrows show current supply lines from this
+  depot. You may press escape to cancel.
+</p>
+
+##
+towerRemoveSupplyTip
+
+<p>
+  <span class="title">
+    Remove Supply Line
+  </span>\n
+  If you click here, the supply line to this structure from the source
+  depot will be removed. They will no longer send survivors with
+  supplies to one another. You may press escape to cancel.
+</p>
+
+##
+towerNoRemoveSupplyTip
+
+<p>
+  <span class="title">
+    No Supply Line
+  </span>\n
+  You cannot remove a supply line to this structure because there is no
+  supply line from the source depot to here. You may press escape to
+  cancel.
+</p>
+
+##
+spendFoodTip
+
+<p>
+  <span class="title">
+    Begin spending <span class="hotkey">F</span>ood
+  </span>\n
+  This depot is currently sending out slower survivors to conserve
+  food. You can click here to begin spending food to double the speed
+  of survivors.
+</p>
+
+##
+conserveFoodTip
+
+<p>
+  <span class="title">
+    Begin conserving <span class="hotkey">F</span>ood
+  </span>\n
+  This depot is sending out fast survivors which use up food. Click
+  here to begin conserving food by sending out survivors who move at
+  half speed.
+</p>
+
+##
+upgradeDepotTip
+
+<p>
+  <span class="title">
+    <span class="hotkey">U</span>pgrade (30 Boards)
+  </span>\n
+  Increase the speed of this depot. The survivors at upgraded depots move 50% faster
+  than normal survivors.
+</p>
+
+##
+!1 upgradeSniperTip
+<p>
+  <span class="title">
+    <span class="hotkey">U</span>pgrade
+  </span>\n
+  <span class="cost">$0 Boards</span>\n
+  Upgrade this sniper tower to increase its range by 50%.
+</p>
+
+##
+upgradeInProgressTip
+
+<p>
+  <span class="title">
+    Upgrade In Progress
+  </span>\n
+  The materials necessary to upgrade this structure are on the way.
+</p>  
+
+##
+upgradeMaxTip
+
+<p>
+  <span class="title">
+    Upgrading Complete
+  </span>\n
+  This structure has been completely upgraded.
+</p>
+
+##
+upgradeNoResourceTip
+
+<p>
+  <span class="title">
+    Not Enough Boards to Upgrade
+  </span>\n
+  The suppliers to this structure do not have enough boards, or survivors
+  to transport those boards.
+</p>
+
+##
+backgroundBuildBlockedTip
+
+<p>
+  <span class="title">
+    Location Blocked
+  </span>\n
+  This location is blocked by an obstruction. No structure may be built
+  here. You may press escape to cancel.
+</p>
+
+##
+backgroundBuildShadowTip
+
+<p>
+  <span class="title">
+    Structure Already Planned
+  </span>\n
+  You cannot build here because a structure is already being constructed
+  here. You may press escape to cancel.
+</p>
+
+##
+backgroundBuildZombieTip
+
+<p>
+  <span class="title">
+    Zombies Here
+  </span>\n
+  There are zombies here. Structures cannot be built where there are
+  zombies. You may press escape to cancel.
+</p>
+
+##
+backgroundBuildBridgeTip
+
+<p>
+  <span class="title">
+    Cannot Build on Bridge
+  </span>\n
+  It is too dangerous to build on a bridge. You may press escape to cancel.
+</p>
+
+##
+!1 backgroundBuildSupplyTip
+<p>
+  <span class="title">
+    Need Supply Line
+  </span>\n
+  You must build within $0 squares of an existing depot so it can provide supplies.
+</p>
+##
+towerBuildTip
+
+<p>
+  <span class="title">
+    Structure Already Here
+  </span>\n
+  You cannot build here because there is already a structure here. You may
+  press escape to cancel.
+</p>
+
+##
+backgroundBuildRubbleTip
+
+<p>
+  <span class="title">
+    Rubble Here
+  </span>\n
+  You cannot build here because there is rubble blocking this
+  area. You can build a workshop here to clear the rubble and salvage
+  the resources in this square. You may press escape to cancel.
+</p>
+
+##
+backgroundBuildFeatureTip
+
+<p>
+  <span class="title">
+    Special Feature Here
+  </span>\n
+  There is a special feature here which blocks you from building a
+  structure. You can build a workshop on this square to use this
+  feature. You may press escape to cancel.
+</p>
+
+##
+backgroundBuildDynamiteTip
+
+<p>
+  <span class="title">
+    Dynamite Here
+  </span>\n
+  There is some dynamite here which blocks you from building a
+  structure. You can build a workshop on the dynamite to place the charges
+  and prevent more zombies from getting onto the island. You may press
+  escape to cancel.
+</p>
+
+##
+backgroundEntranceTip
+
+<p>
+  <span class="title">
+    Building Entrance Here
+  </span>\n
+  There is a building entrance here which prevents you from
+  building. You can build a workshop on this square to harvest the
+  resources in the building. You may press escape to cancel.
+</p>
+
+##
+backgroundEmptyEntranceTip
+
+<p>
+  <span class="title">
+    Building Entrance Here
+  </span>\n
+  The building entrance here blocks you from constructing a
+  structure. This building has already been stripped of all useful
+  resources. You may press escape to cancel.
+</p>
+
+##
+buildBarricadeTip
+
+<p>
+  <span class="title">
+    Construct <span class="hotkey">B</span>arricade
+  </span>\n
+  <span class="cost">10 Boards</span>\n
+  Barricades block off streets and slow zombies down. Each board can withstand one zombie hit. Zombies are easier to kill while attacking a barricade.
+</p>
+
+##
+barricadeNoSurvivorTip
+
+<p>
+  <span class="title">
+    Cannot Construct Barricade
+  </span>\n
+  You cannot construct a barricade from this depot. There are no
+  survivors here to carry the boards needed to create the barricade.
+</p>
+
+##
+barricadeNoBoardTip
+
+<p>
+  <span class="title">
+    Cannot Construct Barricade
+  </span>\n
+  You cannot construct a barricade from this depot. There are not enough
+  boards here to create one.
+</p>
+
+##
+buildingBarricadeTip
+
+<p>
+  <span class="title">
+    Place Barricade
+  </span>\n
+  Move the mouse to an open square and click to build a barricade
+  there. It will take some time for a survivor to bring the
+  construction materials to your planned building location. You may
+  press escape to cancel.
+</p>
+
+##
+backgroundBarricadeTip
+
+<p>
+  <span class="title">
+    Click To Build Barricade
+  </span>\n
+  If you click here, a survivor will be dispatched to this location
+  with some boards to build a barricade. You may press escape to
+  cancel.
+</p>
+
+##
+buildDepotTip
+
+<p>
+  <span class="title">
+    Construct <span class="hotkey">D</span>epot
+  </span>\n
+  <span class="cost">1 Survivor</span>\n
+  Depots store your resources and transfer them through your
+  supply network as needed.
+</p>
+
+##
+depotNoSurvivorTip
+
+<p>
+  <span class="title">
+    Cannot Construct Depot
+  </span>\n
+  You cannot construct a depot from this structure. There are no survivors
+  here to build it.
+</p>
+
+##
+depotNoBoardTip
+
+<p>
+  <span class="title">
+    Cannot Construct Depot
+  </span>\n
+  You cannot construct a depot from this structure. There are not enough
+  boards here to build the depot with.
+</p>
+
+##
+buildingDepotTip
+
+<p>
+  <span class="title">
+    Place Depot
+  </span>\n
+  Move the mouse to on an open square and click to build a depot
+  there. It will take some time for a survivor to bring the
+  construction materials to your planned building location. You may
+  press escape to cancel.
+</p>
+
+##
+backgroundDepotTip
+
+<p>
+  <span class="title">
+    Click To Build Depot
+  </span>\n
+  If you click here, a survivor will be dispatched to this location
+  with some boards to build a depot. You may press escape to cancel.
+</p>
+
+##
+buildSniperTip
+
+<p>
+  <span class="title">
+    Construct <span class="hotkey">S</span>niper
+  </span>\n
+  <span class="cost">1 Survivor</span>\n
+  <span class="cost">20 Boards</span>\n
+  Snipers are your only way to kill zombies. They are inaccurate, but
+  will kill a zombie in one hit.
+</p>
+
+##
+sniperNoBoardTip
+
+<p>
+  <span class="title">
+    Cannot Construct Sniper
+  </span>\n
+  You cannot construct a sniper tower from this depot. There are not
+  enough boards available here to build it.
+</p>
+
+##
+sniperNoSurvivorTip
+
+<p>
+  <span class="title">
+    Cannot Construct Sniper
+  </span>\n
+  You cannot construct a sniper tower from this depot. There are no
+  survivors here to build it.
+</p>
+
+##
+buildingSniperTip
+
+<p>
+  <span class="title">
+    Place Sniper
+  </span>\n
+  Move the mouse to on an open square and click to build a sniper tower
+  there. It will take some time for a survivor to bring the
+  construction materials to your planned building location. You may
+  press escape to cancel.
+</p>
+
+##
+backgroundSniperTip
+
+<p>
+  <span class="title">
+    Click To Build Sniper
+  </span>\n
+  If you click here, a survivor will be dispatched to this location
+  with some boards to build a sniper tower. You may press escape to cancel.
+</p>
+
+##
+buildWorkshopTip
+
+<p>
+  <span class="title">
+    Construct <span class="hotkey">W</span>orkshop
+  </span>\n
+  <span class="cost">1 Survivor</span>\n
+  Workshops can be built at the entrances of buildings to collect the
+  resources inside. They can also reclaim resources after a structure has
+  been destroyed or abandoned. Finally, they can be used to activate
+  special features on the map such as dynamite.
+</p>
+
+##
+workshopNoSurvivorTip
+
+<p>
+  <span class="title">
+    Cannot Construct Workshop
+  </span>\n
+  You cannot construct a workshop from this depot. There are no
+  survivors here to build it.
+</p>
+
+##
+buildingWorkshopTip
+
+<p>
+  <span class="title">
+    Place Workshop
+  </span>\n
+  Move the mouse to on the entrance of a building, rubble on the
+  ground, or a special feature and click to build a workshop there. It
+  will take some time for a survivor to arrive at your planned
+  building location. You may press escape to cancel.
+</p>
+
+##
+workshopBackgroundTip
+
+<p>
+  <span class="title">
+    Nothing Here
+  </span>\n
+  There is nothing for a workshop to do here. Workshops can only be
+  placed at the entrance to a building with resources inside, at some
+  rubble on the street, or at a special feature. You may press escape
+  to cancel.
+</p>
+
+##
+workshopBuildingTip
+
+<p>
+  <span class="title">
+    Move to Entrance
+  </span>\n
+  Move the mouse to the entrance of this building and click if you
+  want to salvage the resources inside. You may press escape to cancel.
+</p>
+
+##
+workshopEntranceTip
+
+<p>
+  <span class="title">
+    Click to Salvage
+  </span>\n
+  You can build a workshop here to salvage all usable
+  resources in this building. The workshop will automatically close
+  down and return the survivor when finished. You may press escape to
+  cancel.
+</p>
+
+##
+workshopFeatureTip
+
+<p>
+  <span class="title">
+    Click to Activate
+  </span>\n
+  If you build a workshop it will begin activating the special feature
+  here. The effect depends on the feature. You may press escape to cancel.
+</p>
+
+##
+workshopDynamiteTip
+
+<p>
+  <span class="title">
+    Click to Place Charges
+  </span>\n
+  If you build a workshop here, it will begin placing explosive
+  charges on this bridge. After this bridge is destroyed, no more
+  zombies can cross it to enter the island. You may press escape to
+  cancel.
+</p>
+
+##
+workshopRubbleTip
+
+<p>
+  <span class="title">
+    Click to Reclaim
+  </span>\n
+  Build a workshop here to clear the rubble and reclaim all of
+  the resource in this square. You may press escape to cancel.
+</p>
+
+##
+workshopBuildingZombiesTip
+
+<p>
+  <span class="title">
+    Zombies Inside
+  </span>\n
+  You cannot build a workshop at a building with zombies inside. Lure
+  out and destroy the zombies first. You may press escape to cancel. 
+</p>
+
+##
+workshopBuildingEmptyTip
+
+<p>
+  <span class="title">
+    No Resources Left
+  </span>\n
+  This building has already been stripped of all usable resources. You
+  may press escape to cancel.
+</p>
+
+##
+wasteShotTip
+
+<p>
+  <span class="title">
+    Shoot Into <span class="hotkey">A</span>ir
+  </span>\n
+  Zombies are attracted to sound. Firing a round into the air can
+  serve as a lure for nearby zombies.
+</p>
+
+##
+noWasteShotTip
+
+<p>
+  <span class="title">
+    Out of Ammo
+  </span>\n
+  You cannot shoot into the air becaue this sniper is out of ammo.
+</p>
+
+##
+enableFireTip
+
+<p>
+  <span class="title">
+    Allow Sniper to <span class="hotkey">F</span>ire
+  </span>\n
+  This sniper is currently holding fire. Click this
+  button to allow the sniper to fire at targets within range.
+</p>
+
+##
+disableFireTip
+
+<p>
+  <span class="title">
+    Forbid Sniper from <span class="hotkey">F</span>iring
+  </span>\n
+  This sniper's current orders are to shoot any zombies within
+  range. Click this button to prevent the sniper from firing.
+</p>
+
+##
+ammoNoDecreaseTip
+
+<p>
+  <span class="title">
+    Cannot Decrease Ammo Quota
+  </span>\n
+  The ammo quota is now zero. You cannot further decrease the quota.
+</p>
+
+##
+boardsNoDecreaseTip
+
+<p>
+  <span class="title">
+    Cannot Decrease Board Quota
+  </span>\n
+  The board quota is now zero. You cannot further decrease the quota.
+</p>
+
+##
+foodNoDecreaseTip
+
+<p>
+  <span class="title">
+    Cannot Decrease Food Quota
+  </span>\n
+  The food quota is now zero. You cannot further decrease the quota.
+</p>
+
+##
+survivorsNoDecreaseTip
+
+<p>
+  <span class="title">
+    Cannot Decrease Survivor Quota
+  </span>\n
+  The survivor quota is now zero. You cannot further decrease the quota.
+</p>
+
+##
+barricadeBoardsIncreaseTip
+
+<p>
+  <span class="title">
+    Increase Board Quota
+  </span>\n
+  More boards will hold off zombies for longer. Each zombie attack
+  destroys one board. When this barricade runs out of boards, it will
+  be destroyed.
+</p>
+
+##
+barricadeBoardsDecreaseTip
+
+<p>
+  <span class="title">
+    Decrease Board Quota
+  </span>\n
+  Fewer boards will make this barricade weaker. Your survivors will
+  tear down part of the barricade to recover excess boards. Demolish
+  this barricade by setting the quota to 0.
+</p>
+
+##
+depotAmmoIncreaseTip
+
+<p>
+  <span class="title">
+    Increase Ammo Quota
+  </span>\n
+  More ammo will be stored here to resupply nearby snipers.
+</p>
+
+##
+depotAmmoDecreaseTip
+
+<p>
+  <span class="title">
+    Decrease Ammo Quota
+  </span>\n
+  Less ammo will be kept for resupplying nearby snipers.
+</p>
+
+##
+depotBoardsIncreaseTip
+
+<p>
+  <span class="title">
+    Increase Board Quota
+  </span>\n
+  More boards will be kept on hand to build or upgrade towers.
+</p>
+
+##
+depotBoardsDecreaseTip
+
+<p>
+  <span class="title">
+    Decrease Board Quota
+  </span>\n
+  Fewer boards will be kept here for building or upgrading.
+</p>
+
+##
+depotFoodIncreaseTip
+
+<p>
+  <span class="title">
+    Increase Food Quota
+  </span>\n
+  Food can be used here to increase the speed of your survivors. It
+  can also be used by sniper towers. A depot will reserve all food in
+  its quota for local use and will not transfer it to other depots.
+</p>
+
+##
+depotFoodDecreaseTip
+
+<p>
+  <span class="title">
+    Decrease Food Quota
+  </span>\n
+  If you click here, less food will be reserved for local use. If a
+  depot lacks food, survivors will move more slowly when transferring
+  resources.
+</p>
+
+##
+depotSurvivorsIncreaseTip
+
+<p>
+  <span class="title">
+    Increase Survivor Quota
+  </span>\n
+  More survivors will be here ready to ferry supplies to nearby structures.
+</p>
+
+##
+depotSurvivorsDecreaseTip
+
+<p>
+  <span class="title">
+    Decrease Survivor Quota
+  </span>\n
+  Fewer survivors will be on hand to transfer supplies to nearby
+  structures.
+</p>
+
+##
+sniperAmmoIncreaseTip
+
+<p>
+  <span class="title">
+    Increase Ammo Quota
+  </span>\n
+  Storing more ammo allows this sniper to shoot more zombies between
+  resupplies.
+</p>
+
+##
+sniperAmmoDecreaseTip
+
+<p>
+  <span class="title">
+    Decrease Ammo Quota
+  </span>\n
+  Storing less ammo makes this sniper more reliant on its supplier.
+</p>
+
+##
+sniperFoodIncreaseTip
+
+<p>
+  <span class="title">
+    Increase Food Quota
+  </span>\n
+  Food increases the accuracy of your snipers. If food is available
+  when they fire at a zombie, they will consume some of the food and
+  are 50% more likely to hit. If you click here, more food will be
+  moved here.
+</p>
+
+##
+sniperFoodDecreaseTip
+
+<p>
+  <span class="title">
+    Decrease Food Quota
+  </span>\n
+  If you click here, less food will be stored at this sniper
+  tower. While snipers can still fire without food, they are less
+  accurate.
+</p>
+
+##
+sniperSurvivorsIncreaseTip
+
+<p>
+  <span class="title">
+    Increase Survivor Quota
+  </span>\n
+  More survivors will make this sniper tower more accurate.
+</p>
+
+##
+sniperSurvivorsDecreaseTip
+
+<p>
+  <span class="title">
+    Decrease Survivor Quota
+  </span>\n
+  Fewer survivors will make this sniper less accurate. This tower
+  needs at least one survivor to shoot zombies.
+</p>
+
+##
+workshopSurvivorsIncreaseTip
+
+<p>
+  <span class="title">
+    Increase Survivor Quota
+  </span>\n
+  More survivors will make this workshop faster.
+</p>
+
+##
+workshopSurvivorsDecreaseTip
+
+<p>
+  <span class="title">
+    Decrease Survivor Quota
+  </span>\n
+  Fewer survivors will make this workshop slower.
+</p>
+
+##
+hoverBarricadeTip
+
+<p>
+  <span class="title">
+    Barricade
+  </span>\n
+  Barricades use boards to slow down zombies. Click to select it.
+</p>
+
+##
+hoverBarricadeNoBoardsTip
+
+<p>
+  <span class="title">
+    Barricade is Vulnerable
+  </span>\n
+  There are no boards left in this barricade. The next hit will
+  destroy it unless it is resupplied first.
+</p>
+
+##
+hoverDepotTip
+
+<p>
+  <span class="title">
+    Depot
+  </span>\n
+  This is a depot. You can use it to build other structures or to store
+  and distribute supplies. Click to select it.
+</p>
+
+##
+hoverSniperTip
+
+<p>
+  <span class="title">
+    Sniper Tower
+  </span>\n
+  Sniper towers like this one are used to kill zombies. Snipers aren't 100% accurate, but only one successful shot is required to kill each zombie. Click to
+  select it.
+</p>
+
+##
+hoverSniperNoSurvivorsTip
+
+<p>
+  <span class="title">
+    Sniper Tower Cannot Fire
+  </span>\n
+  There are no survivors here to shoot. This sniper tower
+  is defenseless!
+</p>
+
+##
+hoverSniperNoAmmoTip
+
+<p>
+  <span class="title">
+    Sniper Tower Cannot Fire
+  </span>\n
+  This sniper tower has run out of ammo. It cannot shoot until it is
+  resupplied.
+</p>
+
+##
+hoverSniperHoldFireTip
+
+<p>
+  <span class="title">
+    Sniper Tower Will Not Fire
+  </span>\n
+  You have ordered this sniper tower to hold fire. It will not shoot until
+  you change its orders.
+</p>
+
+##
+hoverWorkshopTip
+
+<p>
+  <span class="title">
+    Workshop
+  </span>\n
+  Workshops are your industrial base. They salvage resources from
+  buildings and rubble to allow the fight to continue.
+</p>
+
+##
+hoverPlanTip
+
+<p>
+  <span class="title">
+    Planned Structure
+  </span>\n
+  A survivor is on the way here to build a structure. You can select the
+  plan to cancel it.
+</p>
+
+##
+hoverRubbleTip
+
+<p>
+  <span class="title">
+    Rubble
+  </span>\n
+  Some rubble blocks the street. You can only build a workshop here
+  to clear away the rubble and recover the resources in the rubble.
+</p>
+
+##
+hoverZombieTip
+
+<p>
+  <span class="title">
+    Zombie
+  </span>\n
+  This is a zombie. They stay where they are unless they hear a
+  noise. When they hear sounds, they will pursue them and attack
+  anything in the way. Survivors, buildings, and especially gunfire
+  attract zombies.
+</p>
+
+##
+hoverFeatureTip
+
+<p>
+  <span class="title">
+    Special Feature
+  </span>\n
+  There is a special feature here. You can build a workshop here to
+  begin activate it.
+</p>
+
+##
+hoverDynamiteTip
+
+<p>
+  <span class="title">
+    Dynamite
+  </span>\n
+  If you built a workshop on these explosives, your survivors
+  will wire them to the bridge and eventually detonate them. If all 
+  bridges are destroyed, no more zombies can invade the
+  island.
+</p>
+
+##
+buildingStandardText
+
+Office
+
+##
+buildingApartmentText
+
+Apartment Complex
+
+##
+buildingSupermarketText
+
+Supermarket (Food)
+
+##
+buildingPoliceStationText
+
+Police Station (Ammo)
+
+##
+buildingHardwareStoreText
+
+Hardware Store (Boards)
+
+##
+buildingChurchText
+
+Church (Survivors)
+
+##
+buildingHospitalText
+
+Hospital (Zombies)
+
+##
+buildingMallText
+
+Mall
+
+##
+buildingHouseText
+
+House
+
+##
+buildingParkingLotText
+
+Parking Lot
+
+##
+zombieThreatNone
+
+None
+
+##
+zombieThreatLow
+
+Low
+
+##
+zombieThreatModerate
+
+Moderate
+
+##
+zombieThreatHigh
+
+High
+
+##
+salvageProspectsNone
+
+None
+
+##
+salvageProspectsLow
+
+Low
+
+##
+salvageProspectsHigh
+
+High
+
+##
+survivorsInside
+
+<span class="survivor">Survivors Inside</span>
+</p>
+
+##
+survivorsNotInside
+
+Deserted
+</p>
+
+##
+!4 buildingText
+
+<p>
+$0\n
+Zombie Threat: <span class="status">$1</span>\n
+Resource Level: <span class="status">$2</span>\n
+$3
+</p>
+
+##
+planCancelTip
+
+<p>
+  <span class="title">
+    Cancel Construction <span class="hotkey">[Del]</span>
+  </span>\n
+  Click here to cancel the planned structure. The survivor sent to build it
+  will return to the depot which sent it.
+</p>
+
+##
+pauseText
+
+Paused
+
+##
+moveWindowNorth
+
+<p>Move window North.</p>
+
+##
+
+moveWindowSouth
+
+<p>Move window South.</p>
+
+##
+
+moveWindowEast
+
+<p>Move window East.</p>
+
+##
+
+moveWindowWest
+
+<p>Move window West.</p>
+
+##
+
+clickDepot
+
+<p>Click on your depot to select it.</p>
+
+##
+
+clickWorkshop
+
+<p>Click on your workshop to select it.</p>
+
+##
+
+clickSniper
+
+<p>Click on your sniper tower to select it.</p>
+
+##
+
+clickBarricade
+
+<p>Click on your barricade to select it.</p>
+
+##
+
+clickRestartTutorial
+
+<p>You have done something unexpected. Press escape to go to the system menu and select restart map to replay the tutorial from the beginning.</p>
+
+##
+
+clickNext
+
+<p>Click Next to continue</p>
+
+##
+
+!1 zombiesLeft
+
+Zombies Left: $0
+
+##
+
+!1 bridgesLeft
+
+Bridges Left: $0
+
+##
+
+musicBarLabel
+
+Music Volume
+
+##
+
+soundBarLabel
+
+Sound Volume
+
+##
+
+scrollBarLabel
+
+Scroll Speed
+
+##
+mainIntroText
+
+No one knows how it happened. Soon, there'll be no one left to
+care. But the simple truth is that overnight a globe full of civilized
+people festered, and changed, and became something less than
+civilized. Less than human. And if you weren't the smartest, or the
+fastest, or the best-armed on your block, well... you're one of them
+now.\n\n
+
+Auriga Squad was the best, and you were its leader. Your final
+orders before static filled the airwaves for good were
+simple. Parachute onto the island. Secure the city. Blow the
+bridges. And set up a secure command post surrounded by water, a safe
+haven from the roving, hungry packs.\n\n
+
+But it didn't work out that way. There were so many of them,
+lurching through the streets, feeding in dark alleyways. Sure, it only
+took one shot to drop them, but it only took one bite to drop you. And
+those bites went through flak suits, through Kevlar, through
+bone...\n\n
+
+Now everyone is dead. Except you and the handful of civilians
+you've rounded up, scared, defiant, looking for a leader. The
+explosives sit useless where the airdrop left them, ready to drop the
+bridges-- if only someone could reach them.\n\n
+
+What the hell. Maybe there's still a chance. There'll be time to
+mourn later, but for now, you'd better get these people moving.
+Something tells you this quiet won't last.\n\n
+
+The clock is ticking.
+
+##
+mainLoseText
+
+The last board shatters and the monsters surge forward, the
+bloodcurdling screams of your dying companions mingling with the
+crunching of bone and snarls of inhuman throats, a wall of tattered
+clothes and festering flesh and teeth stained lurid red advancing
+toward you. And as that last board shatters your hope goes with it,
+and you know you've failed. The island has fallen. Another sliver of
+humanity corrupted and destroyed.\n\n
+
+Screaming in rage, you draw your last weapon, an eight-inch hunting
+knife, and charge straight into the advancing horde, stabbing and
+slashing even as claws rip your flesh and teeth begin shattering your
+bones. Let no man say Auriga Squad fell without a fight, if there be
+men left to say anything at all...
+
+##
+mainWinText
+
+The bridge falls into the water, sounds of rending metal and echoes
+of the blast reverberating through the city, fading slowly to a
+strange, deep silence.\n\n
+
+At first your ragtag team watches numbly, too tired or gripped by
+fear to respond, not yet people again, only survivors.\n\n
+
+But then voices begin to murmur, to gasp, to cry out. A cheer
+ripples through the crowd and finally explodes, elation shattering
+through memories of horror and tears washing cheeks stained with blood
+and grime. You've done it. The island is secure.\n\n
+
+Your lips crack as you smile too. Sure, it's only one victory, and
+there's a lot more work ahead. But it's something. You've made a haven
+against darkness, a place to start to rebuild. Today you've triumphed
+against horror. Against despair. Against the horde.
+
+##
+tutorialText
+
+Tutorial
+
+##
+noviceText
+
+Novice
+
+##
+veteranText
+
+Veteran
+
+##
+expertText
+
+Expert
+
+##
+quartermasterText
+
+Quartermaster
+
+##
+ammoTip
+
+<p>
+  <span class="title">Ammo</span>\n
+  How much ammo is here right now. Your snipers use ammo to shoot
+  zombies.
+</p>
+
+##
+boardsTip
+<p>
+  <span class="title">Boards</span>\n
+  How many boards are here right now. You need boards to build sniper
+  towers, barricades, and more depots. You can also upgrade your
+  sniper towers and repair barricades if you have enough boards.
+</p>
+
+##
+survivorsTip
+
+<p>
+  <span class="title">Survivors</span>\n
+  How many survivors are here right now. Once liberated, survivors can
+  be put to work ferrying supplies, scavenging buildings, making
+  fortifications, manning sniper towers, and setting charges.
+</p>
+
+##
+pediaTip
+
+<p>
+  <span class="title">Zombipedia</span>
+  Click here for more details on how the game works.
+</p>
+
+##
+countDownTip
+
+<p>
+  <span class="title">Countdown Timer</span>\n
+  The timer counts down till the next zombie horde invasion. You can
+  also click here to pause the game.
+</p>
+
+##
+quotaTip
+
+<p>
+  <span class="title">Quota</span>\n
+  If the amount of ammo, boards, or survivors drops below its quota,
+  your depot will send more as long as there is enough to go around.
+</p>
+
+##
+ammoQuotaTip
+
+<p>
+  <span class="title">Ammo Quota</span>\n
+  How much ammo you want to keep on hand here. Snipers use ammo to
+  shoot zombies.
+</p>
+
+##
+boardsQuotaTip
+
+<p>
+  <span class="title">Board Quota</span>\n
+  How many boards you want to keep on hand here. You can use boards
+  to build, upgrade, and repair structures.
+</p>
+
+##
+survivorsQuotaTip
+
+<p>
+  <span class="title">Survivor Quota</span>\n
+  How many survivors should stay here. Survivors transport resources,
+  staff buildings, and increase accuracy at sniper towers.
+</p>
+
+##
+accuracyBarTip
+
+<p>
+  <span class="title">Accuracy</span>\n
+  Shows the accuracy of shots fired by this sniper. Extra survivors
+  act as spotters to increase accuracy. It is much easier to hit
+  zombies as they are attacking a barricade.
+</p>
+
+##
+setChargesBarTip
+
+<p>
+  <span class="title">Set Charges Progress</span>\n
+  Progress towards preparing the explosives to blow the bridge. Your
+  progress is cumulative even if you have to abandon the workshop.
+</p>
+
+##
+leftToExtractTip
+
+<p>
+  <span class="title">Left to Extract</span>
+  How many resources are left in this area for your survivors to
+  recover.
+</p>
+
+##
+ammoLeftTip
+
+<p>
+  <span class="title">Ammo Left</span>\n
+  How much ammo will be recovered before the tower is closed.
+</p>
+
+##
+boardsLeftTip
+
+<p>
+  <span class="title">Survivors Left</span>\n
+  How many boards will be recovered before the tower is closed.
+</p>
+
+##
+survivorsLeftTip
+
+<p>
+  <span class="title">Survivors Left</span>\n
+  How many survivors will be found before the tower is closed.
+</p>
+
+##
+ammoLabel
+
+Ammo
+
+##
+boardsLabel
+
+Boards
+
+##
+foodLabel
+
+Food
+
+##
+survivorsLabel
+
+Survivors
+
+##
+northLabel
+
+North
+
+##
+southLabel
+
+South
+
+##
+eastLabel
+
+East
+
+##
+westLabel
+
+West
+
+##
+nameConstraint
+
+A-Za-z0-9 '
+
+##
+sizeConstraint
+0-9
+
+##
+waitGenerateMap
+
+Generating Map...
+
+##
+waitLoadGame
+
+Loading...
+
+##
+waitSaveGame
+
+Saving...
+
+##
+waitEditMap
+
+Starting Map Editor...
+
+##
+waitDownloadMap
+
+Downloading Map...
+
+##
+waitUploadMap
+
+Uploading Map...
+
+##
+waitRateMap
+
+Submitting Rating...
+
+##
+waitBrowse
+
+Fetching Map List...
+
+##
+!3 timeLabel
+
+Time: $0:$1$2
+
+##
+noAmmoWarning
+
+No Ammo
+
+##
+noBoardsWarning
+
+No Boards
+
+##
+noSurvivorsWarning
+
+No Survivors
+
+##
+noTowerWarning
+
+No Structure There
+
+##
+towerWarning
+
+Structure Already There
+
+##
+towerSameWarning
+
+Structure Can't Supply Itself
+
+##
+supplyExistsWarning
+
+Supply Line Already Exists
+
+##
+noSourceTowerWarning
+
+No Selected Structure
+
+##
+supplyNotExistsWarning
+
+No Supply Line
+
+##
+upgradeInProgressWarning
+
+Upgrade in Progress
+
+##
+noUpgradeResourcesWarning
+
+No Resources
+
+##
+placeZombieWarning
+
+Blocked by Zombie
+
+##
+placeBlockedWarning
+
+Blocked
+
+##
+placeBridgeWarning
+
+Bridge Unstable
+
+##
+placeSupplyWarning
+
+No Supply Line
+
+##
+placeBoringWarning
+
+Nothing to\n
+Scavenge
+
+##
+placeRubbleWarning
+
+Blocked by Rubble
+
+##
+placeFeatureWarning
+
+Blocked by Dynamite
+
+##
+placeBuildingWarning
+
+Building Unsafe
+
+##
+editUnknown
+
+Undefined
+
+##
+editStreetH
+
+Street (H)
+
+##
+editStreetV
+
+Street (V)
+
+##
+editParking
+
+Parking Lot
+
+##
+editPark
+
+Park
+
+##
+editPlaza
+
+Plaza
+
+##
+editShallowWater
+
+Shallow Water
+
+##
+editDeepWater
+
+Deep Water
+
+##
+editBridge
+
+Bridge
+
+##
+editStreet
+
+Street
+
+##
+editCorner
+
+Street Corner
+
+##
+editIntersection
+
+Intersection
+
+##
+editFringe
+
+Office (A)
+
+##
+editPlant
+
+Office (B)
+
+##
+editHardware
+
+Hardware Store
+
+##
+editHospital
+
+Hospital
+
+##
+editApartment
+
+Apartment Building
+
+##
+editChurch
+
+Church
+
+##
+editHouse
+
+House
+
+##
+editMall
+
+Mall
+
+##
+editPolice
+
+Police Station
+
+##
+!1 zombiesEdit
+
+Zombies: $0
+
+##
+!1 ammoEdit
+
+Ammo: $0
+
+##
+!1 boardsEdit
+
+Boards: $0
+
+##
+!1 survivorsEdit
+
+Survivors: $0
+
+##
+!1 levelsEdit
+
+Level: $0
+
+##
+playPediaRootSecret
+
+index
+
+##
+editPediaRootSecret
+
+map_editor
+
+##
+rateBad
+
+Bad
+
+##
+rateOk
+
+Ok
+
+##
+rateGood
+
+Good
+
+##
+rateEasy
+
+Easy
+
+##
+rateMedium
+
+Medium
+
+##
+rateHard
+
+Hard
+
