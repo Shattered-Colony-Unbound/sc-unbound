@@ -1,4 +1,4 @@
-class Truck extends Actor, implements ui.AbstractFrame
+class Truck extends Actor implements ui.AbstractFrame
 {
   public static function createBuildTruck(source : Point, dest : Point,
                                           buildType : Int) : Truck

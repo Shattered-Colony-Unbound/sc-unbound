@@ -109,7 +109,7 @@ class WaitMenu extends MenuRoot
         var mapString = Game.settings.saveMap();
         args.name = Game.settings.getCityName();
         args.map = mapString;
-        args.verify = haxe.Md5.encode(secret + mapString);
+        args.verify = haxe.crypto.Md5.encode(secret + mapString);
         request.data = args;
         request.url = "http://auriga-squad.appspot.com/upload";
 //        request.url = "http://localhost:8080/upload";

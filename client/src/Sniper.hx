@@ -1,4 +1,4 @@
-class Sniper extends Tower, implements ui.AbstractFrame
+class Sniper extends Tower implements ui.AbstractFrame
 {
   public static var maxSurvivors = 11;
 

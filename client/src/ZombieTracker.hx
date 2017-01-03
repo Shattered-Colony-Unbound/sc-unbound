@@ -7,7 +7,7 @@ class ZombieTracker
   public function new() : Void
   {
     cellList = [];
-    cellToIndex = new IntHash<Int>();
+    cellToIndex = new haxe.ds.IntMap<Int>();
     buildingList = [];
   }
 
@@ -120,7 +120,7 @@ class ZombieTracker
   public function load(input : Dynamic) : Void
   {
     cellList = [];
-    cellToIndex = new IntHash<Int>();
+    cellToIndex = new haxe.ds.IntMap<Int>();
     buildingList = [];
 
     for (i in 0...(input.cellList.length))
@@ -140,7 +140,7 @@ class ZombieTracker
   // single number.
   var cellList : Array<Int>;
   // Maps cell positions to their index in cellList.
-  var cellToIndex : IntHash<Int>;
+  var cellToIndex : haxe.ds.IntMap<Int>;
   // List of buildings which may have zombies.
   var buildingList : Array<Building>;
 }

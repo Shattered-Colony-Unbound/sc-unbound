@@ -50,7 +50,7 @@ class Script
   public function new(newSprite : ui.ScriptView) : Void
   {
     sprite = newSprite;
-    states = new Hash<ScriptState>();
+    states = new haxe.ds.StringMap<ScriptState>();
     current = new Array<ScriptState>();
     sprite.setButtons(clickNext, clickSkip);
     sprite.update(current);
@@ -166,6 +166,6 @@ class Script
   }
 
   var sprite : ui.ScriptView;
-  var states : Hash<ScriptState>;
+  var states : haxe.ds.StringMap<ScriptState>;
   var current : Array<ScriptState>;
 }

@@ -1,4 +1,4 @@
-class Zombie extends Actor, implements ui.AbstractFrame
+class Zombie extends Actor implements ui.AbstractFrame
 {
   public static var START_SPAWN = 0;
   public static var BUILDING_SPAWN = 1;

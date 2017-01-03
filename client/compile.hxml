@@ -2,7 +2,7 @@
 -D AS3
 #-D MUSIC
 #-D TEST_LOAD
--lib twister
+-lib mtprng
 -cp src
 -as3 tmp/as3
 -swf-version 9

@@ -804,7 +804,7 @@ class Tower extends Actor
     stuff.saveEditResources(output);
   }
 
-  public static function save(tower : Tower) : Dynamic
+  public static function saveStatic(tower : Tower) : Dynamic
   {
     return tower.save();
   }

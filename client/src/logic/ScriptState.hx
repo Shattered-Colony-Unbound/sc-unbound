@@ -50,7 +50,7 @@ class ScriptState
   }
 
   // Returns true if all edges check out ok.
-  public function checkEdges(states : Hash<ScriptState>) : Bool
+  public function checkEdges(states : haxe.ds.StringMap<ScriptState>) : Bool
   {
     var result = true;
     for (edge in edges)

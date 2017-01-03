@@ -6,9 +6,9 @@ class ScriptParse
   {
   }
 
-  static var stringToTransition = new Hash<Int>();
-  static var stringToAction = new Hash<Int>();
-  static var stringToButton = new Hash<Int>();
+  static var stringToTransition = new haxe.ds.StringMap<Int>();
+  static var stringToAction = new haxe.ds.StringMap<Int>();
+  static var stringToButton = new haxe.ds.StringMap<Int>();
 
   public static function init() : Void
   {

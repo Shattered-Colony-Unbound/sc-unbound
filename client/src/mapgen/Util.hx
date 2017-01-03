@@ -2,11 +2,11 @@ package mapgen;
 
 class Util
 {
-  private static var generator : twister.Twister = null;
+  private static var generator : mtprng.MT = null;
 
   public static function rand(num : Int) : Int
   {
-    return generator.getPositiveInt() % num;
+    return generator.randomUInt() % num;
   }
 
   public static function shuffle<T>(list : Array<T>) : Void
@@ -56,8 +56,8 @@ class Util
     {
       fullName += limit.toString();
     }
-    var seeds = [];
-    var md5 = haxe.Md5.encode(fullName);
+    var seeds : Array<UInt>= [];
+    var md5 = haxe.crypto.Md5.encode(fullName);
     for (i in 0...4)
     {
       var start = i*4;
@@ -72,7 +72,7 @@ class Util
         seeds.push(nextSeed);
       }
     }
-    generator = new twister.Twister(null, seeds);
+    generator = mtprng.MT.makeFromArray(seeds);
   }
 
   public static function addTile(pos : Point, tile : Int) : Void

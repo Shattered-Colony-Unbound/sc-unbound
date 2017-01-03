@@ -290,10 +290,10 @@ class GameSettings
 //      Lib.trace("Before compression: " + raw.length);
       raw.compress();
 //      Lib.trace("After compression: " + raw.length);
-      var encoder = new haxe.BaseCode(baseBytes);
+      var encoder = new haxe.crypto.BaseCode(baseBytes);
       var encodedBytes = encoder.encodeBytes(haxe.io.Bytes.ofData(raw));
       var encoded = encodedBytes.toString();
-      var hash = haxe.Md5.encode(encoded);
+      var hash = haxe.crypto.Md5.encode(encoded);
       var oneLine = hash + "." + encoded;
       var lines = [];
       var start = 0;
@@ -375,7 +375,7 @@ class GameSettings
       }
       var hash = halves[0];
       var encoded = halves[1];
-      var checkHash = haxe.Md5.encode(encoded);
+      var checkHash = haxe.crypto.Md5.encode(encoded);
       if (hash != checkHash)
       {
         throw new flash.errors.Error("Could not verify terrain.\n"
@@ -383,7 +383,7 @@ class GameSettings
                                      + "Calculated Hash: " + checkHash);
       }
       var encodedBytes = haxe.io.Bytes.ofString(encoded);
-      var decoder = new haxe.BaseCode(baseBytes);
+      var decoder = new haxe.crypto.BaseCode(baseBytes);
       var compressed = decoder.decodeBytes(encodedBytes).getData();
       compressed.uncompress();
       var raw = compressed;

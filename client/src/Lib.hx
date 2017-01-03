@@ -1,19 +1,19 @@
 class Lib
 {
-  private static var generator = new twister.Twister();
+  private static var generator = new mtprng.MT();
 
-  public static function reseed(seed : Array<Int>)
+  public static function reseed(seed : Array<UInt>)
   {
-    generator = new twister.Twister(null, seed);
+    generator = mtprng.MT.makeFromArray(seed);
   }
 
   public static function rand(num : Int) : Int
   {
-    return generator.getPositiveInt() % num;
+    return generator.randomUInt() % num;
   }
 
   public static function shuffle<T>(list : Array<T>,
-                                    ? optGen : twister.Twister) : Void
+                                    ? optGen : mtprng.MT) : Void
   {
     var gen = optGen;
     if (gen == null)
@@ -23,7 +23,7 @@ class Lib
     var j = list.length - 1;
     while (j > 0)
     {
-      var k = gen.getPositiveInt()%(j+1);
+      var k = gen.randomUInt()%(j+1);
       var temp = list[j];
       list[j] = list[k];
       list[k] = temp;
@@ -32,7 +32,7 @@ class Lib
   }
 
   public static function randWeightedIndex(weights : Array<Int>,
-                                           ? optGen : twister.Twister) : Int
+                                           ? optGen : mtprng.MT) : Int
   {
     var gen = optGen;
     if (gen == null)
@@ -44,7 +44,7 @@ class Lib
     {
       total += pos;
     }
-    var choice = gen.getPositiveInt()%total;
+    var choice = gen.randomUInt()%total;
     return weightedIndex(choice, weights);
   }
 
@@ -63,14 +63,14 @@ class Lib
     return result;
   }
 
-  public static function randDirection(? optGen : twister.Twister) : Direction
+  public static function randDirection(? optGen : mtprng.MT) : Direction
   {
     var gen = optGen;
     if (gen == null)
     {
       gen = generator;
     }
-    var choice = gen.getPositiveInt()%4;
+    var choice = gen.randomUInt()%4;
     if (choice == 0)
     {
       return Direction.NORTH;

@@ -4,7 +4,7 @@ class PediaHash
 {
   public function new() : Void
   {
-    hash = new Hash<String>();
+    hash = new haxe.ds.StringMap<String>();
     var i = 0;
     while (i < ui.Text.pedia.length - 1)
     {
@@ -26,5 +26,5 @@ class PediaHash
     return result;
   }
 
-  var hash : Hash<String>;
+  var hash : haxe.ds.StringMap<String>;
 }
